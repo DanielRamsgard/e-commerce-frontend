@@ -1,0 +1,18 @@
+.x-icon {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    z-index: 999;
+}
+
+.cover-page {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+    z-index:989;
+}

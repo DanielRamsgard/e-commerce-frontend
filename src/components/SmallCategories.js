@@ -6,11 +6,11 @@ const SmallCategories = () => {
             <div className="right">
                 <div className="box-right">
                     <div className="text anek-malayalam-font"> Living Room </div>
-                    <img alt="House" className="box-right-img-special" src="/static/media/house.png"></img>
+                    <img alt="House" className="box-right-img" src="/static/media/house.png"></img>
                 </div>
                 <div className="box-right">
                     <div className="text anek-malayalam-font"> Skincare </div>
-                    <img alt="Bottle" className="box-right-img-special" src="/static/media/bottle-special.jpeg"></img>
+                    <img alt="Bottle" className="box-right-img" src="/static/media/bottle-special.jpeg"></img>
                 </div>
 
             </div>
