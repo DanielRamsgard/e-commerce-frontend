@@ -1,5 +1,6 @@
 :root {
     --red-color: rgba(216, 20, 20, 255);
+    --red-color-dark: rgba(162, 15, 15, 255);
 }
 
 .nav-container {
@@ -51,6 +52,22 @@
 }
 
 .cart {
-    width: 35px;
-    height: 25px;
+    position: relative;
+}
+
+.ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top:-65%;
+    right: -30%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red-color-dark);
+    border-radius: 50%;
 }
