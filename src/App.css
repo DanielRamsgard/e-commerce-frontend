@@ -16,6 +16,11 @@
     transition: height 0.3s ease;
 }
 
+.spacer {
+    width: 100%;
+    height: 70px;
+}
+
 .nav-bar {
     position: fixed;
     z-index: 9999;
@@ -139,7 +144,7 @@
     z-index: 1;
 }
 
-.anek-malayalam-font {
+.proud, .anek-malayalam-font {
     font-family: "Anek Malayalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -147,6 +152,11 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+}
+
+.proud {
+    padding-left: 10%;
+    font-size: 24px;
 }
 
 .anek-malayalam-font-light {
