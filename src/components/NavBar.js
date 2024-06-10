@@ -4,8 +4,10 @@ import React from 'react';
 const NavBar = () => {
     return (
         <div className="nav-container">
-            <div className="logo">
-                甜蜜的家
+            <div className="logo-container">
+                <div className="logo">
+                    甜蜜的家
+                </div>
             </div>
             <div className="button-container">
                 <div className="shopping">

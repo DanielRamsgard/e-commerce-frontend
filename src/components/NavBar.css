@@ -12,7 +12,17 @@
     height: inherit;
 }
 
+.logo-container {
+    position: relative;
+    margin-left: 150px;
+    width: 70px;
+    height: 70px;
+}
+
 .logo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +30,6 @@
     color: white;
     font-weight: bold;
     background-color: var(--red-color);
-    margin-left: 150px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
