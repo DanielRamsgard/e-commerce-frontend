@@ -1,4 +1,3 @@
-import "./NavBar.css";
 import React from 'react';
 import LargeNavBar from "./LargeNavBar";
 import SmallNavBar from "./SmallNavBar";

@@ -2,6 +2,9 @@
     --box-shadow-color: rgb(100,100,100,.1);
     --gray-brightness: 50%;
     --gray-brightness-img: 70%;
+    --red-color: rgba(216, 20, 20, 255);
+    --red-color-dark: rgba(162, 15, 15, 255);
+    --button-color: 50;
 }
 
 .nav-bar-small {
@@ -168,4 +171,87 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.logo-container {
+    position: relative;
+    margin-left: 10%;
+    width: 70px;
+    height: 70px;
+}
+
+.logo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: var(--red-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.logo-svg {
+    color:white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    color: rgb(var(--button-color),var(--button-color),var(--button-color));
+}
+
+.shopping {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.hamburger, .cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.ticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top:-65%;
+    right: -30%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--red-color-dark);
+    border-radius: 50%;
 }
