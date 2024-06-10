@@ -1,6 +1,7 @@
 :root {
     --red-color: rgba(216, 20, 20, 255);
     --red-color-dark: rgba(162, 15, 15, 255);
+    --button-color: 50;
 }
 
 .nav-container {
@@ -39,7 +40,12 @@
 .button {
     background-color: white;
     border: none;
+    cursor: pointer;
 
+}
+
+.button:hover {
+    color: rgb(var(--button-color),var(--button-color),var(--button-color));
 }
 
 .shopping {
@@ -47,12 +53,12 @@
     column-gap: 15px;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     margin-left: 150px;
 }
 
 .cart {
     position: relative;
+    cursor: pointer;
 }
 
 .ticker {
