@@ -1,10 +1,22 @@
 import './App.css';
 import NavBar from './components/NavBar';
+import React, { useRef, useEffect, useState } from 'react';
 
 function App() {
-  return (
+    const myRef = useRef();
+    const [ref, setRef] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setRef(entry.isIntersecting)
+        });
+        observer.observe(myRef.current);
+    }, [])
+
+    return (
     <div>
-        <div className="nav-bar">
+        <div className={ref ? "nav-bar-small" : "nav-bar"}>
             <NavBar/>
         </div>
         <div className="content">
@@ -25,7 +37,7 @@ function App() {
                         <div className="text anek-malayalam-font"> Kichen </div>
                         <img className="box-right-img" src="/static/media/kitchen.jpeg"></img>
                     </div>
-                    <div className="box-right">
+                    <div ref={myRef} className="box-right">
                         <div className="text anek-malayalam-font"> Electronics </div>
                         <img className="box-right-img" src="/static/media/electronics.jpeg"></img>
                     </div>
@@ -34,7 +46,7 @@ function App() {
             </div>
         </div>
     </div>
-  );
+    );
 }
 
 export default App;
