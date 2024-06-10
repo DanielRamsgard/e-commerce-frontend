@@ -5,7 +5,8 @@ import UseScrollPosition from './Scroll';
 import UseWindowWidth from './WindowWidth';
 import SmallCategories from './SmallCategories';
 
-const Home = () => {
+const Home = (props) => {
+    props.setPrevPage("/");
     const [scroll, setScroll] = useState(false);
     const scrollPosition = UseScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
