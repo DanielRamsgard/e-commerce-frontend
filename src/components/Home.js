@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import UseScrollPosition from './Scroll';
 import UseWindowWidth from './WindowWidth';
 import SmallCategories from './SmallCategories';
+import Card from './Card';
 
 const Home = (props) => {
     props.setPrevPage("/");
@@ -37,7 +38,7 @@ const Home = (props) => {
                     </div>
                     <div className="box">
                         <div className="products-container">
-                            <div className="card"></div>
+                            <Card img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
                             <div className="card"></div>
                             <div className="card"></div>
                             <div className="card"></div>

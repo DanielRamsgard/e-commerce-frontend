@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
 :root {
     --box-shadow-color: rgb(100,100,100,.1);
     --gray-brightness: 50%;
@@ -307,9 +309,62 @@
 
 .card {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 269px;
     height: 360px;
     border: 2px solid var(--card-border);
+}
+
+.card-img {
+    object-fit: cover;
+    position: relative;
+    width: inherit;
+    height: 290px;
+    background-color: black;
+}
+
+.card-title {
+    position: relative;
+    width: inherit;
+    height: 30px;
+}
+
+.card-price {
+    position: relative;
+    width: inherit;
+    height: 40px;
+}
+
+.card-title-text {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.card-price-text {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+
+.card-price, .card-text, .sunflower-light {
+    font-family: "Sunflower", sans-serif;
+    font-style: normal;
+  }
+  
+
+.card-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-price {
+    font-size: 23px;
+    font-weight: 1000;
 }
