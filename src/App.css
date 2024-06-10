@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+:root {
+    --box-shadow-color: rgb(100,100,100,.1);
+    --gray-brightness: 50%;
+    --gray-brightness-img: 70%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    box-shadow: 0px 2px 3px var(--box-shadow-color);
+    top: 0px;
+    left: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content {
+    padding-top: 133px;
+    width: 100%;
+}
+
+.categories {
+    display:flex;
+    column-gap: 13px;
+    row-gap: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    position: relative;
+    height: 500px;
+    display:flex;
+    column-gap: 13px;
+    row-gap: 13px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+}
+
+.right {
+    height: 500px;
+    row-gap: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+}
+
+.box-right {
+    position: relative;
+    height: 243.5px;
+    width: 100%;
+    transition: filter 1.5s ease;
+    cursor: pointer;
+}
+
+.box-right-img {
+    height: inherit;
+    width: inherit;
+    filter: brightness(var(--gray-brightness-img));
+    transition: filter 1.5s ease;
+    cursor: pointer;
+}
+
+.box-right-img:hover {
+    filter: brightness(var(--gray-brightness));
+}
+
+.box-left-big {
+    position: relative;
+    height: 100%;
+    width: 568.5px;
+}
+
+.box-left-big-img {
+    width: inherit;
+    height: inherit;
+    transition: filter 1.5s ease;
+    filter: brightness(var(--gray-brightness-img));
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+.box-left-big-img:hover {
+    position: relative;
+    filter: brightness(var(--gray-brightness));
+}
+
+.box-left-small {
+    position: relative;
+    height: 100%;
+    width: 268.5px;
+}
+
+.box-left-small-img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    filter: brightness(var(--gray-brightness-img));
+    transition: filter 1.5s ease;
+    cursor: pointer;
+}
+
+.box-left-small-img:hover {
+    filter: brightness(var(--gray-brightness));
+}
+
+.category-text {
+    position: absolute;
+    top:0%;
+    left:0%;
+}
+
+.text {
+    color:white;
+    position: absolute;
+    bottom: 23px;
+    left: 20px;
+    z-index: 1;
+}
+
+.anek-malayalam-font {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
