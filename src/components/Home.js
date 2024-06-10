@@ -35,6 +35,18 @@ const Home = (props) => {
                     <div className="proud">
                         Products we are proud of
                     </div>
+                    <div className="box">
+                        <div className="products-container">
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                            <div className="card"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
