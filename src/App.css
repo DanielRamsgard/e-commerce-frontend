@@ -78,12 +78,16 @@
     cursor: pointer;
 }
 
-.box-right-img {
+.box-right-img-special, .box-right-img {
     height: inherit;
     width: inherit;
     filter: brightness(var(--gray-brightness-img));
     transition: filter 1.5s ease;
     cursor: pointer;
+}
+
+.box-right-img-special {
+    object-fit: cover;
 }
 
 .box-right-img:hover {

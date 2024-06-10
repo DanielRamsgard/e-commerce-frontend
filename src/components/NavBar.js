@@ -1,11 +1,12 @@
 import "./NavBar.css";
 import React from 'react';
 import LargeNavBar from "./LargeNavBar";
+import SmallNavBar from "./SmallNavBar";
 
 const NavBar = (props) => {
     return (
         <div className="nav-container">
-            <LargeNavBar />
+            {props.widthBool ? <SmallNavBar/> : <LargeNavBar />}
 
         </div>
     );
