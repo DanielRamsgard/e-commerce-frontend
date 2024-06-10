@@ -134,4 +134,14 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-  }
+}
+
+.anek-malayalam-font-light {
+    font-family: "Anek Malayalam", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}

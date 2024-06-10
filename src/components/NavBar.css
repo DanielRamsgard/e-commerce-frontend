@@ -1,3 +1,7 @@
+:root {
+    --red-color: rgba(216, 20, 20, 255);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -7,13 +11,46 @@
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: var(--red-color);
     margin-left: 150px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
-.logo-img {
-    cursor: pointer;
+.logo-svg {
+    color:white;
 }
 
 .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 150px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+
+}
+
+.shopping {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.cart {
+    width: 35px;
+    height: 25px;
 }
