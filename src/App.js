@@ -6,12 +6,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
-    const [prevPage, setPrevPage] = useState("/navigation");
+    const [prevPage, setPrevPage] = useState("/");
+    function updatePrevPage(newPage) {
+        setPrevPage(newPage);
+    };
 
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home setPrevPage={setPrevPage}/>}></Route>
+                <Route path="/" element={<Home updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
             </Routes>
         </Router>

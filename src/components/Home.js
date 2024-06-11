@@ -7,7 +7,7 @@ import SmallCategories from './SmallCategories';
 import Card from './Card';
 
 const Home = (props) => {
-    props.setPrevPage("/");
+    props.updatePrevPage("/");
     const [scroll, setScroll] = useState(false);
     const scrollPosition = UseScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
@@ -39,13 +39,13 @@ const Home = (props) => {
                     <div className="box">
                         <div className="products-container">
                             <Card img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
-                            <div className="card"></div>
-                            <div className="card"></div>
-                            <div className="card"></div>
-                            <div className="card"></div>
-                            <div className="card"></div>
-                            <div className="card"></div>
-                            <div className="card"></div>
+                            <Card img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
+                            <Card img="/static/media/skin.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
+                            <Card img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
+                            <Card img="/static/media/toaster.jpeg" title="GE Stainless Steel 2-Slice Toaster" price="$49"/>
+                            <Card img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
+                            <Card img="/static/media/cutting.jpeg" title="Ironwood Gourmet Charleston Board" price="$117"/>
+                            <Card img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
                         </div>
                     </div>
                 </div>
