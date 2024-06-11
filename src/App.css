@@ -422,23 +422,78 @@
 }
 
 .wallpaper {
-    object-fit: cover;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
-    width: 576px;
+    width: 50%;
     height: 400px;
     background-color: var(--grey-wallpaper);
 } 
 
-.container-wallpaper {
-    padding-left: 10%;
+.wallpaper-new {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey-wallpaper);
+} 
+
+.wallpaper-container-img {
+    width: 50%;
+    height: 400px;
+}
+
+.container-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.triple-container {
+    width: 100%;
+}
+
+.container-container-new {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container-wallpaper-new {
+    width: inherit;
+    height: inherit;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    padding-right: 10%;
+}
+
+.wallpaper-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.wallpaper-img-new {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey-wallpaper);
+}
+
+.container-wallpaper {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-wallpaper-new {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -567,27 +622,21 @@ input {
 }
 
 .header {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: 800;
-    padding-left: 3%;
-    padding-right: 5%;
 }
 
 .header-two {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     font-weight: 800;
-    padding-left: 7%;
-    padding-right: 5%; 
 }
 
 .call-action {
     text-align: left;
     font-size: 18px;
     font-weight: 500;
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 .shop-now {
@@ -599,14 +648,23 @@ input {
     background-color: black;
     cursor: pointer;
     font-size: 20px;
+    transition: .5s background-color ease;
 }
 
-.shop-now-container {
-    padding-left: 30%;
-    width: 100%;
+.info-container {
+    width: 80%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.shop-now:hover {
+    background-color: white;
+    border: 4px solid black;
+    color: black;
 }
 
 .trend-container {
