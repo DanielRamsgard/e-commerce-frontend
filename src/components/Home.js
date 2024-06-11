@@ -58,6 +58,14 @@ const Home = (props) => {
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction text={"Creative, Harmonious Living"} /> : <BigCallToAction text={"Creative, Harmonious Living"} img="/static/media/wallpaper.jpeg" bool={true}/>}
                     <div className="spacer"></div>
+                    <div className="trend-container">
+                        <div className="trend">
+                            <div className="trend-text">
+                                Trending Now
+                            </div>
+                        </div>
+                    </div>
+                    <div className="spacer-2"></div>
                     <CustomCarousel widthPhone={widthPhone}/>
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction text={"Comfortable & Elegant Living"} /> : <BigCallToAction text={"Comfortable & Elegant Living"} img="/static/media/wallpaper1.jpeg" bool={false}/>}
