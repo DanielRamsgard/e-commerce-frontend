@@ -50,15 +50,14 @@ const CustomCarousel = (props) => {
             </div>
             <div className="spacer-2"></div>
             <Carousel responsive={responsive}>
-                <SmallCard img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$213"/>
-                <SmallCard img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
-                <SmallCard img="/static/media/skin.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
+                <SmallCard img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
+                <SmallCard img="/static/media/shelve.jpeg" title="Ceramic Whisper Pendant Lamp" price="$148"/>
+                <SmallCard img="/static/media/test.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
                 <SmallCard img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
                 <SmallCard img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
                 <SmallCard img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
                 <SmallCard img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
                 <SmallCard img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
-                        
             </Carousel>
         </>
     );

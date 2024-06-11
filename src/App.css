@@ -345,7 +345,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 269px;
     height: 360px;
@@ -357,7 +357,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 220px;
     height: 290px;
@@ -373,7 +373,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     height: 360px;
@@ -387,18 +387,38 @@
 
 .card-img {
     object-fit: cover;
-    position: relative;
-    width: inherit;
-    height: 290px;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container-2 {
+    width: 269px;
+    height: 360px;
+    overflow: hidden;
+}
+
+card-img-small {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+img-container-card-small {
+    width: 220px;
+    height: 234px;
+    overflow: hidden;
 }
 
 .card-img-small {
     object-fit: cover;
-    position: relative;
-    width: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container-card-small {
+    width: 220px;
     height: 234px;
-    background-color: black;
+    overflow: hidden;
 }
 
 .card-title {
@@ -414,6 +434,17 @@
 }
 
 .card-price {
+    position: relative;
+    width: inherit;
+    height: 40px;
+}
+
+.card-price-small {
+    font-size: 23px;
+    font-weight: 1000;
+}
+
+.card-price-small {
     position: relative;
     width: inherit;
     height: 40px;
@@ -435,7 +466,7 @@
     left: 2%;
 }
 
-.call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }

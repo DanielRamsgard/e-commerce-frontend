@@ -4,7 +4,9 @@ const Card = (props) => {
     return (
         <>
             <div className={props.widthPhone ? "card-new" : "card"}>
-                <img alt="Card" src={props.img} className="card-img"></img>
+                <div className="card-container-2">
+                    <img alt="Card" src={props.img} className="card-img"></img>
+                </div>
                 <div className="card-title">
                     <div className="card-title-text card-text">
                         {props.title}
