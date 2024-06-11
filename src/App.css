@@ -176,7 +176,7 @@
     z-index: 1;
 }
 
-.nav-text, .proud, .anek-malayalam-font {
+.shop-now, .header, .nav-text, .proud, .anek-malayalam-font {
     font-family: "Anek Malayalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -404,7 +404,7 @@
     left: 2%;
 }
 
-.subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }
@@ -422,7 +422,12 @@
 
 .wallpaper {
     object-fit: cover;
-    width: clamp(400px, 576px, 576px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 576px;
     height: 400px;
     background-color: var(--grey-wallpaper);
 } 
@@ -516,6 +521,7 @@ input {
 }
 
 .bottom-container-new {
+    padding-top: 23px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -560,4 +566,47 @@ input {
 
 .text-bottom:hover {
     color: var(--hover);
+}
+
+.header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+
+.header-two {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 7%;
+    padding-right: 5%; 
+}
+
+.call-action {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.shop-now {
+    height: 50px;
+    width: 140px;
+    color: white;
+    text-align: center;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.shop-now-container {
+    padding-left: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }

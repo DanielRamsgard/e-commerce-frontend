@@ -55,9 +55,9 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="spacer"></div>
-                    {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper.jpeg" bool={true}/>}
+                    {widthBoolCallToAction ? <SmallCallToAction text={"Creative, harmonious living"} /> : <BigCallToAction text={"Creative, harmonious living"} img="/static/media/wallpaper.jpeg" bool={true}/>}
                     <div className="spacer"></div>
-                    {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper1.jpeg" bool={false}/>}
+                    {widthBoolCallToAction ? <SmallCallToAction text={"Comfortable & Elegant Living"} /> : <BigCallToAction text={"Comfortable & Elegant Living"} img="/static/media/wallpaper1.jpeg" bool={false}/>}
                     <div className="spacer"></div>
                     <Newsletter />
                     <BottomHeader widthPhone={widthPhone}/>
