@@ -578,12 +578,14 @@ input {
 
 .bottom-container-new {
     padding-top: 23px;
+    height: 200px;
     width: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
     row-gap: 23px;
     justify-content: center;
+    padding-bottom: 23px;
 }
 
 .bottom-text {
