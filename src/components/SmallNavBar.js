@@ -8,10 +8,17 @@ const SmallNavBar = () => {
         navigate('/navigation');
     }
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      };
+
     return (
         <>
             <div className="logo-container">
-                <div className="logo">
+                <div className="logo" onClick={scrollToTop}>
                     甜蜜的家
                 </div>
             </div>

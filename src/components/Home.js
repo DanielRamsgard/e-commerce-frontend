@@ -31,7 +31,7 @@ const Home = (props) => {
                 <div className={scroll ? "nav-bar-small" : "nav-bar"}>
                     <NavBar widthBool={widthBoolNav}/>
                 </div>
-                <div className="content">
+                <div className="content" id="home">
                     <div className="categories">
                         {widthBoolCategories ? <SmallCategories /> : <BigCategories />}
                     </div>
@@ -55,6 +55,7 @@ const Home = (props) => {
                     {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper.jpeg" bool={true}/>}
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper1.jpeg" bool={false}/>}
+                    <div className="spacer"></div>
                 </div>
             </div>
         </>
