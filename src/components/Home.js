@@ -5,6 +5,8 @@ import UseScrollPosition from './Scroll';
 import UseWindowWidth from './WindowWidth';
 import SmallCategories from './SmallCategories';
 import Card from './Card';
+import BigCallToAction from './BigCallToAction';
+import SmallCallToAction from './SmallCallToAction';
 
 const Home = (props) => {
     props.updatePrevPage("/");
@@ -12,6 +14,7 @@ const Home = (props) => {
     const scrollPosition = UseScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
     const widthBoolCategories = UseWindowWidth(1200);
+    const widthBoolCallToAction = UseWindowWidth(750);
 
     useEffect(() => {
         if (scrollPosition > 20) {
@@ -48,6 +51,10 @@ const Home = (props) => {
                             <Card img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
                         </div>
                     </div>
+                    <div className="spacer"></div>
+                    {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper.jpeg" bool={true}/>}
+                    <div className="spacer"></div>
+                    {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper1.jpeg" bool={false}/>}
                 </div>
             </div>
         </>

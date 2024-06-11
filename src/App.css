@@ -8,6 +8,8 @@
     --red-color-dark: rgba(162, 15, 15, 255);
     --button-color: 50;
     --card-border: rgb(210,210,210);
+    --card-borde-hover: rgb(0,0,0);
+    --grey-wallpaper: rgba(233, 233, 233, 255);
 }
 
 .nav-bar-small {
@@ -307,7 +309,16 @@
     align-items: center;
 }
 
+.box-grey {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -315,6 +326,11 @@
     width: 269px;
     height: 360px;
     border: 2px solid var(--card-border);
+    transition: .5s border ease;
+}
+
+.card:hover {
+    border: 2px solid var(--card-borde-hover);
 }
 
 .card-img {
@@ -367,4 +383,19 @@
 .card-price {
     font-size: 23px;
     font-weight: 1000;
+}
+
+.wallpaper {
+    object-fit: cover;
+    width: clamp(400px, 576px, 576px);
+    height: 400px;
+    background-color: var(--grey-wallpaper);
+} 
+
+.container-wallpaper {
+    padding-left: 10%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10%;
 }
