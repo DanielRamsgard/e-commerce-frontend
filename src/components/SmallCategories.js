@@ -3,7 +3,7 @@ import React from 'react';
 const SmallCategories = () => {
     return (
         <>
-            <div className="right">
+            <div className="right-new">
                 <div className="box-right">
                     <div className="text anek-malayalam-font"> Living Room </div>
                     <img alt="House" className="box-right-img" src="/static/media/house.png"></img>
@@ -14,7 +14,7 @@ const SmallCategories = () => {
                 </div>
 
             </div>
-            <div className="right">
+            <div className="right-new">
                 <div className="box-right">
                     <div className="text anek-malayalam-font"> Kichen </div>
                     <img alt="Kitchen" className="box-right-img" src="/static/media/kitchen.jpeg"></img>

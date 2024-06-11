@@ -3,7 +3,7 @@ import React from 'react';
 const Card = (props) => {
     return (
         <>
-            <div className="card">
+            <div className={props.widthPhone ? "card-new" : "card"}>
                 <img alt="Card" src={props.img} className="card-img"></img>
                 <div className="card-title">
                     <div className="card-title-text card-text">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const BottomHeader = () => {
+const BottomHeader = (props) => {
     const handleClickBottom = () => {
         window.scrollTo({
             top: 0,
@@ -10,7 +10,7 @@ const BottomHeader = () => {
     
     return (
         <>  
-            <div className="bottom-container">
+            <div className={ props.widthPhone ? "bottom-container-new" : "bottom-container"}>
                 <div className="bottom-text">
                     <div className="text-bottom" onClick={handleClickBottom}>
                         About

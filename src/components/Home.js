@@ -17,6 +17,7 @@ const Home = (props) => {
     const widthBoolNav = UseWindowWidth(700);
     const widthBoolCategories = UseWindowWidth(1200);
     const widthBoolCallToAction = UseWindowWidth(750);
+    const widthPhone = UseWindowWidth(300);
 
     useEffect(() => {
         if (scrollPosition > 20) {
@@ -35,7 +36,7 @@ const Home = (props) => {
                 </div>
                 <div className="content" id="home">
                     <div className="categories">
-                        {widthBoolCategories ? <SmallCategories /> : <BigCategories />}
+                        {widthBoolCategories ? <SmallCategories widthPhone={widthPhone}/> : <BigCategories />}
                     </div>
                     <div className="spacer"></div>
                     <div className="proud">
@@ -43,14 +44,14 @@ const Home = (props) => {
                     </div>
                     <div className="box">
                         <div className="products-container">
-                            <Card img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
-                            <Card img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
-                            <Card img="/static/media/skin.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
-                            <Card img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
-                            <Card img="/static/media/toaster.jpeg" title="GE Stainless Steel 2-Slice Toaster" price="$49"/>
-                            <Card img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
-                            <Card img="/static/media/cutting.jpeg" title="Ironwood Gourmet Charleston Board" price="$117"/>
-                            <Card img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
+                            <Card widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
+                            <Card widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
+                            <Card widthPhone={widthPhone} img="/static/media/skin.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
+                            <Card widthPhone={widthPhone} img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
+                            <Card widthPhone={widthPhone} img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
+                            <Card widthPhone={widthPhone} img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
+                            <Card widthPhone={widthPhone} img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
+                            <Card widthPhone={widthPhone} img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
                         </div>
                     </div>
                     <div className="spacer"></div>
@@ -59,7 +60,7 @@ const Home = (props) => {
                     {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper1.jpeg" bool={false}/>}
                     <div className="spacer"></div>
                     <Newsletter />
-                    <BottomHeader />
+                    <BottomHeader widthPhone={widthPhone}/>
                 </div>
             </div>
         </>
