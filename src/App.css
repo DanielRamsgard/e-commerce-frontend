@@ -397,6 +397,12 @@
     overflow: hidden;
 }
 
+.card-container-2-new {
+    width: 90%;
+    height: 360px;
+    overflow: hidden;
+}
+
 card-img-small {
     object-fit: cover;
     width: 100%;
