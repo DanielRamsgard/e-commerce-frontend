@@ -9,7 +9,7 @@ import BigCallToAction from './BigCallToAction';
 import SmallCallToAction from './SmallCallToAction';
 import Newsletter from './Newsletter';
 import BottomHeader from './BottomHeader';
-import Carousel from './Carousel';
+import CustomCarousel from './CarouselCustom';
 
 const Home = (props) => {
     props.updatePrevPage("/");
@@ -58,7 +58,7 @@ const Home = (props) => {
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction text={"Creative, Harmonious Living"} /> : <BigCallToAction text={"Creative, Harmonious Living"} img="/static/media/wallpaper.jpeg" bool={true}/>}
                     <div className="spacer"></div>
-                    <Carousel widthPhone={widthPhone}/>
+                    <CustomCarousel widthPhone={widthPhone}/>
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction text={"Comfortable & Elegant Living"} /> : <BigCallToAction text={"Comfortable & Elegant Living"} img="/static/media/wallpaper1.jpeg" bool={false}/>}
                     <div className="spacer"></div>
