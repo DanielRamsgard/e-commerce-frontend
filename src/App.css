@@ -458,10 +458,6 @@
     flex-wrap: wrap;
 }
 
-input::placeholder {
-    padding-left: 7px;
-}
-
 .newsletter-text {
     font-size: 40px;
     color:white;
@@ -478,6 +474,7 @@ input::placeholder {
 }
 
 .subscribe-news {
+    padding-left: 7px;
     width: 150px;
     height: 28px;
     font-size: 15px;
