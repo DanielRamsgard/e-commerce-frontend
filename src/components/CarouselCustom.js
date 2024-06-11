@@ -10,19 +10,19 @@ const CustomCarousel = (props) => {
         superLargeDesktop: {
           // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
-          items: 5
+          items: 8
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          breakpoint: { max: 3000, min: 1400 },
+          items: 5
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
+          breakpoint: { max: 0, min: 0 },
+          items: 5
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+          breakpoint: { max: 0, min: 0 },
+          items: 5
         }
       };
 
@@ -49,16 +49,25 @@ const CustomCarousel = (props) => {
 
             </div>
             <div className="spacer-2"></div>
-            <Carousel responsive={responsive}>
-                <SmallCard img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
-                <SmallCard img="/static/media/shelve.jpeg" title="Ceramic Whisper Pendant Lamp" price="$148"/>
-                <SmallCard img="/static/media/test.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
-                <SmallCard img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
-                <SmallCard img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
-                <SmallCard img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
-                <SmallCard img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
-                <SmallCard img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
-            </Carousel>
+            <div className="slider-container-2">
+                <div className="slider-container">
+                    <Carousel responsive={responsive} infinite={true}>
+                        <SmallCard img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
+                        <SmallCard img="/static/media/shelve.jpeg" title="Insight Series Four Shelf" price="$148"/>
+                        <SmallCard img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
+                        <SmallCard img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
+                        <SmallCard img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
+                        <SmallCard img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
+                        <SmallCard img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
+                        <SmallCard img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
+                        <SmallCard img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
+                        <SmallCard img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
+                        <SmallCard img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
+                        <SmallCard img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
+                        <SmallCard img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
+                    </Carousel>
+                </div>
+            </div>
         </>
     );
 }
