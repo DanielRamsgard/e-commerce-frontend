@@ -1,11 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const LargeNavBar = () => {
+const LargeNavBar = (props) => {
+    const navigate = useNavigate();
+
+    const goToPrev = () => {
+        navigate(props.prevPage);
+    }
+
     const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
+        if (props.prevPage === "/"){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+        } else {
+            goToPrev()
+        }
       };
 
     return (

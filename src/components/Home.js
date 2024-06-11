@@ -7,6 +7,8 @@ import SmallCategories from './SmallCategories';
 import Card from './Card';
 import BigCallToAction from './BigCallToAction';
 import SmallCallToAction from './SmallCallToAction';
+import Newsletter from './Newsletter';
+import BottomHeader from './BottomHeader';
 
 const Home = (props) => {
     props.updatePrevPage("/");
@@ -29,7 +31,7 @@ const Home = (props) => {
         <>
             <div>
                 <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                    <NavBar widthBool={widthBoolNav}/>
+                    <NavBar prevPage={props.prevPage} widthBool={widthBoolNav}/>
                 </div>
                 <div className="content" id="home">
                     <div className="categories">
@@ -56,6 +58,8 @@ const Home = (props) => {
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction /> : <BigCallToAction img="/static/media/wallpaper1.jpeg" bool={false}/>}
                     <div className="spacer"></div>
+                    <Newsletter />
+                    <BottomHeader />
                 </div>
             </div>
         </>

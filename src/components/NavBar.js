@@ -5,7 +5,7 @@ import SmallNavBar from "./SmallNavBar";
 const NavBar = (props) => {
     return (
         <div className="nav-container">
-            {props.widthBool ? <SmallNavBar/> : <LargeNavBar />}
+            {props.widthBool ? <SmallNavBar prevPage={props.prevPage}/> : <LargeNavBar prevPage={props.prevPage}/>}
 
         </div>
     );

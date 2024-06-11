@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
     --box-shadow-color: rgb(100,100,100,.1);
@@ -10,6 +12,8 @@
     --card-border: rgb(210,210,210);
     --card-borde-hover: rgb(0,0,0);
     --grey-wallpaper: rgba(233, 233, 233, 255);
+    --newsletter: rgba(25, 25, 25, 255);
+    --hover: rgb(230,230,230);
 }
 
 .nav-bar-small {
@@ -369,7 +373,7 @@
     left: 2%;
 }
 
-.card-price, .card-text, .sunflower-light {
+.subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }
@@ -398,4 +402,112 @@
     display: flex;
     flex-wrap: wrap;
     padding-right: 10%;
+}
+
+
+.text-bottom, .clout, .newsletter-text, .prompt-black {
+    font-family: "Prompt", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    background-color: var(--newsletter);
+    flex-wrap: wrap;
+}
+
+.newsletter-text {
+    font-size: 40px;
+    color:white;
+    font-weight: 900;
+}
+
+.subscribe-container {
+    column-gap: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subscribe-news {
+    width: 150px;
+    height: 28px;
+    font-size: 15px;
+    font-weight: 300;
+    border: none;
+}
+
+.subscribe {
+    cursor: pointer;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+}
+
+.space {
+    width: 100%;
+    height: 20px;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
+}
+
+input {
+    text-align: left;
+}
+
+.bottom-container {
+    width: 100%;
+    height: 170px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    justify-content: center;
+}
+
+.bottom-text {
+    column-gap: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.clout {
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.clout:hover {
+    color: var(--hover);
+}
+
+.text-bottom {
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.text-bottom:hover {
+    color: var(--hover);
 }

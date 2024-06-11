@@ -1,18 +1,26 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const SmallNavBar = () => {
+const SmallNavBar = (props) => {
     const navigate = useNavigate();
 
     const goToNav = () => {
         navigate('/navigation');
     }
 
+    const goToPrev = () => {
+        navigate(props.prevPage);
+    }
+
     const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
+        if (props.prevPage === "/"){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+        } else {
+            goToPrev()
+        }
       };
 
     return (
