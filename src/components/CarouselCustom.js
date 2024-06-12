@@ -50,7 +50,6 @@ const CustomCarousel = () => {
                         <SmallCard img="/static/media/china.jpeg" title="Oneida Moda 65-Piece Set" price="$145"/>
                         <SmallCard img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
                         <SmallCard img="/static/media/tv2.jpeg" title="FHD Flat-Screem Moniter" price="$143"/>
-                        <SmallCard img="/static/media/gold2.jpg" title="Gold Globe Light Fixture" price="$599"/>
                         <SmallCard img="/static/media/key.jpeg" title="Wireless Mechanical Keyboard" price="$49"/>
                     </Carousel>
                 </div>
