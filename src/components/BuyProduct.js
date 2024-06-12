@@ -21,7 +21,15 @@ const BuyProduct = () => {
                                     Quantity
                                 </div>
                                 <div className="quant-change-container">
-                                    
+                                    <div className="left-right-control left">
+                                        -
+                                    </div>
+                                    <div className="middle-number left-right-control">
+                                        1
+                                    </div>
+                                    <div className="left-right-control right">
+                                        +
+                                    </div>
                                 </div>
                                 <div className="quant-price">
                                     $119.00
