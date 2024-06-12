@@ -43,7 +43,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/" element={<Home updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
                 <Route path="/categories/all" element={<CategoriesAll prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/furniture" element={<Furniture prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
@@ -52,7 +52,7 @@ function App() {
                 <Route path="/categories/kitchen" element={<Kitchen prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/chairs" element={<Chairs prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/skincare" element={<Skincare prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/product" element={<Product size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/product" element={<Product updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const BuyProduct = (props) => {
     const [num, setNum] = useState(1);
-    const [img, setImg] = useState("/static/media/spanish2.jpeg");
+    const [img, setImg] = useState(props.imgOne);
 
     const decreaseNum = () => {
         if (num > 1) {

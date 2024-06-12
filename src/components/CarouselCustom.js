@@ -4,8 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import SmallCard from './SmallCard';
 
 
-const CustomCarousel = () => {
-    
+const CustomCarousel = (props) => {
     const responsive = {
         superLargerDesktop: {
           // the naming can be any, depends on you.
@@ -44,18 +43,18 @@ const CustomCarousel = () => {
             <div className="slider-container-2">
                 <div className="slider-container">
                     <Carousel responsive={responsive} infinite={true}>
-                        <SmallCard img="/static/media/chanel.jpeg" title="Boy De Chanel Toning Lotion" price="$65"/>
-                        <SmallCard img="/static/media/dome.jpeg" title="Matt Black Dome Pendant" price="$460"/>
-                        <SmallCard img="/static/media/spanish2.jpeg" title="Natural Leather Spanish Chair" price="$5040"/>
-                        <SmallCard img="/static/media/skin.jpeg" title="Blue Lagoon Skincare Lotion" price="$60"/>
-                        <SmallCard img="/static/media/cow2.jpg" title="Authentic Cowhide Leather Chair" price="$1158"/>
-                        <SmallCard img="/static/media/chairspecial.jpeg" title="Kaydan Chair" price="$1598"/>
-                        <SmallCard img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
-                        <SmallCard img="/static/media/shelve.jpeg" title="Insight Series Four Shelf" price="$148"/>
-                        <SmallCard img="/static/media/china.jpeg" title="Oneida Moda 65-Piece Set" price="$145"/>
-                        <SmallCard img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
-                        <SmallCard img="/static/media/tv2.jpeg" title="FHD Flat-Screem Moniter" price="$143"/>
-                        <SmallCard img="/static/media/key.jpeg" title="Wireless Mechanical Keyboard" price="$49"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/chanel.jpeg" title="Boy De Chanel Toning Lotion" price="$65"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/dome.jpeg" title="Matt Black Dome Pendant" price="$460"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/spanish2.jpeg" title="Natural Leather Spanish Chair" price="$5040"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/skin.jpeg" title="Blue Lagoon Skincare Lotion" price="$60"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/cow2.jpg" title="Authentic Cowhide Leather Chair" price="$1158"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/chairspecial.jpeg" title="Kaydan Chair" price="$1598"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/shelve.jpeg" title="Insight Series Four Shelf" price="$148"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/china.jpeg" title="Oneida Moda 65-Piece Set" price="$145"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/tv2.jpeg" title="FHD Flat-Screem Moniter" price="$143"/>
+                        <SmallCard updateProduct={props.updateProduct} img="/static/media/key.jpeg" title="Wireless Mechanical Keyboard" price="$49"/>
                     </Carousel>
                 </div>
             </div>

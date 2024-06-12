@@ -49,7 +49,7 @@ const Product = (props) => {
                 </div>
             </div>
             <div className="spacer-2"></div>
-            <CustomCarousel widthPhone={widthPhone}/>
+            <CustomCarousel updateProduct={props.updateProduct} widthPhone={widthPhone}/>
             <div className="spacer"></div>
             <Newsletter />
             <BottomHeader widthPhone={widthPhone}/>
