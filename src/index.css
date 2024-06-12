@@ -587,7 +587,7 @@ img-container-card-small {
 }
 
 
-.mini-title, .mini-mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
+.quant-price, .mini-title, .mini-mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
     font-family: "Prompt", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -958,16 +958,6 @@ input {
     width: 100%;
 }
 
-.quantity-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 140px;
-    width: 100%;
-    background-color: aqua;
-    
-}
-
 .add-to-cart-container {
     display: flex;
     justify-content: space-between;
@@ -1011,4 +1001,18 @@ input {
     background-color: var(--product-grey);
     color: var(--red-buy);
     border: 2px solid var(--red-buy);
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.quant-price {
+    font-size: 28px;
+    font-weight: 400;
 }

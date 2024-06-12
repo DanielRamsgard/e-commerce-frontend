@@ -17,7 +17,15 @@ const BuyProduct = () => {
                                 </div>
                             </div>
                             <div className="quantity-container">
-
+                                <div className="quant-price">
+                                    Quantity
+                                </div>
+                                <div className="quant-change-container">
+                                    
+                                </div>
+                                <div className="quant-price">
+                                    $119.00
+                                </div>
                             </div>
                             <div className="add-to-cart-container">
                                 <div className="add-to-cart">
