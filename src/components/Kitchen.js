@@ -36,7 +36,7 @@ const Kitchen = (props) => {
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <div className="middle">ALL</div>
+            <div className="middle">KITCHEN</div>
             <div className="spacer-2"></div>
             <div className="button-container-cat">
                 <button className="cat-button" onClick={() => {navigate("/categories/all")}}> All </button>
