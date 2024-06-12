@@ -5,7 +5,7 @@ const BuyProduct = () => {
         <>
             <div className="product-buy-container">
                 <div className="product-buy-container-two">
-                    <div className="product-title-text"> This Product </div>
+                    <div className="product-title-text"> Comfy Chair </div>
                     <div className="product-images-container">
 
                     </div>
@@ -13,7 +13,9 @@ const BuyProduct = () => {
                         <div className="product-info-container-2">
                             <div className="product-description-container">
                                 <div className="product-description">
-                                    
+                                Sink into the plush cushions, enveloped in soft, velvety upholstery that invites you to unwind after a long day. The ergonomic design ensures optimal support for your back, neck, and shoulders, promoting relaxation and reducing strain.
+
+    
                                 </div>
                             </div>
                             <div className="quantity-container">
@@ -50,22 +52,22 @@ const BuyProduct = () => {
                 <div className="context-container">
                     <div className="context-container-2">
                         <div className="context-container-3">
-                            <div className="mini-title"> Test: </div>
-                            <div className="mini-mini-title"> test </div>
+                            <div className="mini-title"> Texture: </div>
+                            <div className="mini-mini-title"> Comfy Material </div>
+
+                        </div>
+                    </div>
+                    <div className="context-container-2">
+                        <div className="context-container-3">
+                            <div className="mini-title"> Weight: </div>
+                            <div className="mini-mini-title"> 25kg </div>
 
                         </div>
                     </div>
                     <div className="context-container-2">
                         <div className="context-container-3">
                             <div className="mini-title"> Test: </div>
-                            <div className="mini-mini-title"> test </div>
-
-                        </div>
-                    </div>
-                    <div className="context-container-2">
-                        <div className="context-container-3">
-                            <div className="mini-title"> Test: </div>
-                            <div className="mini-mini-title"> test </div>
+                            <div className="mini-mini-title"> 60cm x 30cm </div>
 
                         </div>
                     </div>

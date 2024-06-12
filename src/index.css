@@ -492,7 +492,7 @@ img-container-card-small {
     left: 2%;
 }
 
-.card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }
@@ -587,7 +587,7 @@ img-container-card-small {
 }
 
 
-.left-right-control, .quant-price, .mini-title, .mini-mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
+.left-right-control, .quant-price, .mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
     font-family: "Prompt", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -916,7 +916,7 @@ input {
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 
@@ -926,8 +926,8 @@ input {
 }
 
 .mini-mini-title {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .product-info-container-2 {
@@ -937,14 +937,11 @@ input {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: black;
-    opacity: .5;
 }
 
 .product-description-container {
     height: 233px;
     width: 100%;
-    background-color: brown;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -952,6 +949,9 @@ input {
 }
 
 .product-description {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
     text-align: left;
     display: flex;
     flex-wrap: wrap;
@@ -964,7 +964,6 @@ input {
     align-items: center;
     height: 70px;
     width: 100%;
-    background-color: blue;
 }
 
 .add-to-cart {
@@ -1010,7 +1009,6 @@ input {
     column-gap: 3px;
     height: 140px;
     width: 100%;
-    background-color: aqua;
 }
 
 .quant-price {
@@ -1027,6 +1025,7 @@ input {
 }
 
 .left-right-control {
+    cursor: pointer;
     font-size: 25px;
     font-weight: 600;
     display: flex;
@@ -1036,6 +1035,7 @@ input {
     height: 55px;
     background-color: white;
     color: black;
+    transition: .5s background-color ease;
 }
 
 .left {
