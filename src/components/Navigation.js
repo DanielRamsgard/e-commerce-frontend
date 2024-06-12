@@ -24,7 +24,7 @@ const CoverPage = (props) => {
                 <div className="nav-text">
                     Cart
                 </div>
-                <div className="nav-text">
+                <div className="nav-text" onClick={() => {navigate("/product")}}>
                     Products Page
                 </div>
             </div>
