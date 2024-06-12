@@ -12,7 +12,6 @@ import BottomHeader from './BottomHeader';
 import CustomCarousel from './CarouselCustom';
 
 const Home = (props) => {
-    props.updatePrevPage("/");
     const [scroll, setScroll] = useState(false);
     const scrollPosition = UseScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
@@ -21,8 +20,9 @@ const Home = (props) => {
     const widthPhone = UseWindowWidth(300);
 
     useEffect(() => {
+        props.updatePrevPage("/");
         window.scrollTo(0, 0);
-      }, []);
+      }, [props]);
 
     useEffect(() => {
         if (scrollPosition > 20) {
