@@ -6,7 +6,7 @@ const BuyProduct = (props) => {
             <div className="product-buy-container">
                 <div className={ props.widthScreen ? "product-buy-container-two-new" : "product-buy-container-two"}>
                     <div className="product-title-text"> Comfy Chair </div>
-                    <div className="product-images-container">
+                    <div className={ props.widthSmall ? "product-images-container-new" : "product-images-container"}>
                         <div className="product-images-container-2">
                             <div className="product-big-image-container">
                                 <img src="/static/media/spanish2.jpeg" className="product-image-check"></img>
@@ -25,16 +25,16 @@ const BuyProduct = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="product-info-container">
-                        <div className="product-info-container-2">
-                            <div className="product-description-container">
+                    <div className={props.widthSmall ? "product-info-container-new" : "product-info-container"}>
+                        <div className={props.widthSmall ? "product-info-container-2-new" : "product-info-container-2"}>
+                            <div className={props.widthSmall ? "product-description-container-new" : "product-description-container"}>
                                 <div className="product-description">
                                 Sink into the plush cushions, enveloped in soft, velvety upholstery that invites you to unwind after a long day. The ergonomic design ensures optimal support for your back, neck, and shoulders, promoting relaxation and reducing strain.
 
     
                                 </div>
                             </div>
-                            <div className={props.widthSmall ? "quantity-container-new" : "quantity-container"}>
+                            <div className={props.widthText ? "quantity-container-new" : "quantity-container"}>
                                 <div className={props.widthScreen ? "quant-price-new" : "quant-price"}>
                                     Quantity
                                 </div>
@@ -53,7 +53,7 @@ const BuyProduct = (props) => {
                                     $119.00
                                 </div>
                             </div>
-                            <div className="add-to-cart-container">
+                            <div className={props.widthSmall ? "add-to-cart-container-new" : "add-to-cart-container"}>
                                 <div className="add-to-cart">
                                     ADD TO CART
                                 </div>
