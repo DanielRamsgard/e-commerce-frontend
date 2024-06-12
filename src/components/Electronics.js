@@ -8,15 +8,13 @@ import Card from './Card';
 import { useNavigate } from 'react-router-dom';
 
 const Electronics = (props) => {
-    props.updatePrevPage("/electronics");
-
     const navigate = useNavigate();
 
     useEffect(() => {
+        props.updatePrevPage("/categories/electronics");
         window.scrollTo(0, 0);
-      }, []);
+      }, [props]);
 
-    props.updatePrevPage("/categories/all");
     const scrollPosition = UseScrollPosition();
     const [scroll, setScroll] = useState(false);
     const widthBoolNav = UseWindowWidth(700);
