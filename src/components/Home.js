@@ -12,6 +12,7 @@ import BottomHeader from './BottomHeader';
 import CustomCarousel from './CarouselCustom';
 
 const Home = (props) => {
+
     const [scroll, setScroll] = useState(false);
     const scrollPosition = UseScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
