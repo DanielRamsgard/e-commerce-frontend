@@ -872,6 +872,7 @@ input {
 
 .product-buy-container-two-new {
     width: 97%;
+    flex-direction: column;
 }
 
 .product-title-text {
@@ -902,7 +903,7 @@ input {
 }
 
 .context-container-new {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -913,6 +914,16 @@ input {
 
 .context-container-2 {
     width: 31.5%;
+    background-color: var(--product-grey);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.context-container-2-new {
+    width: inherit;
     background-color: var(--product-grey);
     height: 100px;
     display: flex;
@@ -1028,7 +1039,7 @@ input {
 }
 
 .quant-price-new {
-    font-size: 20px
+    font-size: 20px;
 }
 
 .quant-change-container {

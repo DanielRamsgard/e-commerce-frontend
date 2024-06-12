@@ -66,21 +66,21 @@ const BuyProduct = (props) => {
                 </div>
                 <div className="spacer"></div>
                 <div className={ props.widthThree ? "context-container-new" : "context-container"}>
-                    <div className="context-container-2">
+                    <div className={ props.widthThree ? "context-container-2-new" : "context-container-2"}>
                         <div className="context-container-3">
                             <div className="mini-title"> Texture: </div>
                             <div className="mini-mini-title"> Comfy Material </div>
 
                         </div>
                     </div>
-                    <div className="context-container-2">
+                    <div className={ props.widthThree ? "context-container-2-new" : "context-container-2"}>
                         <div className="context-container-3">
                             <div className="mini-title"> Weight: </div>
                             <div className="mini-mini-title"> 25kg </div>
 
                         </div>
                     </div>
-                    <div className="context-container-2">
+                    <div className={ props.widthThree ? "context-container-2-new" : "context-container-2"}>
                         <div className="context-container-3">
                             <div className="mini-title"> Test: </div>
                             <div className="mini-mini-title"> 60cm x 30cm </div>
