@@ -10,7 +10,17 @@ const BuyProduct = () => {
 
                     </div>
                     <div className="product-info-container">
+                        <div className="product-info-container-2">
+                            <div className="product-description">
 
+                            </div>
+                            <div className="quantity">
+
+                            </div>
+                            <div className="add-to-cart">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="spacer"></div>

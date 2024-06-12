@@ -883,6 +883,9 @@ input {
 }
 
 .product-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 590px;
     background-color: var(--product-grey);
@@ -924,4 +927,27 @@ input {
 .mini-mini-title {
     font-size: 20px;
     font-weight: 400;
+}
+
+.product-info-container-2 {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+    opacity: .5;
+}
+
+.product-description {
+
+}
+
+.quantity {
+    
+}
+
+.add-to-cart {
+
 }
