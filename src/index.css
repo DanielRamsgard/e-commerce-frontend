@@ -34,6 +34,7 @@ code {
     --height: 30px;
     --grey-button: rgb(50,50,50);
     --product-grey: rgba(229, 229, 229, 255);
+    --red-buy: rgba(182, 0, 44, 255);
 }
 
 .nav-bar-small {
@@ -196,7 +197,7 @@ code {
     z-index: 1;
 }
 
-.middle, .trend-text, .shop-now, .header, .nav-text, .proud, .anek-malayalam-font {
+.buy-now, .add-to-cart, .middle, .trend-text, .shop-now, .header, .nav-text, .proud, .anek-malayalam-font {
     font-family: "Anek Malayalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -940,14 +941,74 @@ input {
     opacity: .5;
 }
 
-.product-description {
-
+.product-description-container {
+    height: 233px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.quantity {
+.product-description {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    background-color: aqua;
     
 }
 
-.add-to-cart {
+.add-to-cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+}
 
+.add-to-cart {
+    height: 72%;
+    width: 47.5%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    color: white;
+    background-color: black;
+}
+
+.buy-now {
+    height: 72%;
+    width: 47.5%;
+    background-color: var(--red-buy);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid var(--red-buy);
+    font-size: 16px;
+    transition: .2s background-color ease;
+}
+
+.buy-now:hover {
+    background-color: var(--product-grey);
+    color: var(--red-buy);
+    border: 2px solid var(--red-buy);
 }

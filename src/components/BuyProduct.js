@@ -11,14 +11,21 @@ const BuyProduct = () => {
                     </div>
                     <div className="product-info-container">
                         <div className="product-info-container-2">
-                            <div className="product-description">
+                            <div className="product-description-container">
+                                <div className="product-description">
+                                    
+                                </div>
+                            </div>
+                            <div className="quantity-container">
 
                             </div>
-                            <div className="quantity">
-
-                            </div>
-                            <div className="add-to-cart">
-
+                            <div className="add-to-cart-container">
+                                <div className="add-to-cart">
+                                    ADD TO CART
+                                </div>
+                                <div className="buy-now">
+                                    BUY NOW
+                                </div>
                             </div>
                         </div>
                     </div>
