@@ -5,6 +5,7 @@ import UseScrollPosition from './Scroll';
 import Newsletter from './Newsletter';
 import BottomHeader from './BottomHeader';
 import CustomCarousel from './CarouselCustom';
+import BuyProduct from './BuyProduct';
 
 const Product = (props) => {
     useEffect(() => {
@@ -33,7 +34,7 @@ const Product = (props) => {
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <div>hello</div>
+            <BuyProduct />
             <div className="spacer"></div>
             <div className="trend-container">
                 <div className="trend">
