@@ -20,14 +20,20 @@ function App() {
     const [description, setDescription] = useState("Sink into the plush cushions, enveloped in soft, velvety upholstery that invites you to unwind after a long day. The ergonomic design ensures optimal support for your back, neck, and shoulders, promoting relaxation and reducing strain.");
     const [price, setPrice] = useState(5040);
     const [title, setTitle] = useState("Natural Leather Spanish Chair");
+    const [texture, setTexture] = useState("Leather");
+    const [weight, setWeight] = useState("25kg");
+    const [size, setSize] = useState("80cm x 50cm");
 
-    function updateProduct(imgOne, imgTwo, imgThree, description, price, title) {
+    function updateProduct(imgOne, imgTwo, imgThree, description, price, title, texture, weight, size) {
         setImgOne(imgOne);
         setImgTwo(imgTwo);
         setImgThree(imgThree);
         setDescription(description);
         setPrice(price);
         setTitle(title);
+        setTexture(texture);
+        setWeight(weight);
+        setSize(size);
     }
 
     function updatePrevPage(newPage) {
@@ -46,7 +52,7 @@ function App() {
                 <Route path="/categories/kitchen" element={<Kitchen prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/chairs" element={<Chairs prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/skincare" element={<Skincare prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/product" element={<Product title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/product" element={<Product size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );
