@@ -34,7 +34,7 @@ const BuyProduct = (props) => {
     
                                 </div>
                             </div>
-                            <div className="quantity-container">
+                            <div className={props.widthSmall ? "quantity-container-new" : "quantity-container"}>
                                 <div className={props.widthScreen ? "quant-price-new" : "quant-price"}>
                                     Quantity
                                 </div>
