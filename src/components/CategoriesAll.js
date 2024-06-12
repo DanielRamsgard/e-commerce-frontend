@@ -6,7 +6,7 @@ import Newsletter from './Newsletter';
 import BottomHeader from './BottomHeader';
 import Card from './Card';
 
-const Categories = (props) => {
+const CategoriesAll = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
@@ -32,6 +32,19 @@ const Categories = (props) => {
                 <NavBar prevPage={props.prevPage} widthBool={widthBoolNav}/>
             </div>
             <div className="spacer"></div>
+            <div className="spacer-2"></div>
+            <div className="middle">ALL</div>
+            <div className="spacer-2"></div>
+            <div className="button-container-cat">
+                <button className="cat-button"> All </button>
+                <button className="cat-button"> Furniture </button>
+                <button className="cat-button"> Electronics </button>
+                <button className="cat-button"> Lamps </button>
+                <button className="cat-button"> Kitchen </button>
+                <button className="cat-button"> Chairs </button>
+                <button className="cat-button"> Skincare </button>
+            </div>
+            <div className="spacer-2"></div>
             <div className="box">
                 <div className="products-container" id="top">
                     <Card widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
@@ -63,4 +76,4 @@ const Categories = (props) => {
     );
 }
 
-export default Categories;
+export default CategoriesAll;

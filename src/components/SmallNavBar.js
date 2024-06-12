@@ -19,7 +19,7 @@ const SmallNavBar = (props) => {
                 behavior: 'smooth'
               });
         } else {
-            goToPrev()
+            navigate("/")
         }
       };
 

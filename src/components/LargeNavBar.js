@@ -24,7 +24,7 @@ const LargeNavBar = (props) => {
             </div>
             <div className="button-container">
                 <div className="shopping">
-                    <button className="anek-malayalam-font-light button" onClick={() => {navigate("/categories/all#top");}}>
+                    <button className="anek-malayalam-font-light button" onClick={() => {navigate("/categories/all");}}>
                         Categories
                     </button>
                     <button className="anek-malayalam-font-light button">

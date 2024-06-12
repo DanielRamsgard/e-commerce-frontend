@@ -15,6 +15,8 @@
     --newsletter: rgba(25, 25, 25, 255);
     --hover: rgb(230,230,230);
     --button-box: rgba(55, 55, 55, 255);
+    --grey-cat: rgb(150,150,150);
+    --height: 30px;
 }
 
 .nav-bar-small {
@@ -177,7 +179,7 @@
     z-index: 1;
 }
 
-.trend-text, .shop-now, .header, .nav-text, .proud, .anek-malayalam-font {
+.middle, .trend-text, .shop-now, .header, .nav-text, .proud, .anek-malayalam-font {
     font-family: "Anek Malayalam", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -796,4 +798,32 @@ input {
 .slider-container-2 {
     display: flex;
     justify-content: center;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container-cat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 13px;
+    column-gap: 13px;
+}
+
+.cat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--grey-cat);
+    background-color: white;
+    color: black;
+    height: var(--height);
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
