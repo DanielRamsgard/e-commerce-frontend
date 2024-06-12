@@ -18,7 +18,7 @@ const CoverPage = (props) => {
                 </div>
             </div>
             <div className="navigation-container">
-                <div className="nav-text">
+                <div className="nav-text" onClick={() => {navigate("/categories/all")}}>
                     Categories
                 </div>
                 <div className="nav-text">

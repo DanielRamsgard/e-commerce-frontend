@@ -7,6 +7,11 @@ import BottomHeader from './BottomHeader';
 import Card from './Card';
 
 const Categories = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+    props.updatePrevPage("/categories/all");
     const scrollPosition = UseScrollPosition();
     const [scroll, setScroll] = useState(false);
     const widthBoolNav = UseWindowWidth(700);
@@ -28,7 +33,7 @@ const Categories = (props) => {
             </div>
             <div className="spacer"></div>
             <div className="box">
-                <div className="products-container">
+                <div className="products-container" id="top">
                     <Card widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
                     <Card widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
                     <Card widthPhone={widthPhone} img="/static/media/skincream.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
@@ -42,13 +47,13 @@ const Categories = (props) => {
                     <Card widthPhone={widthPhone} img="/static/media/spanish2.jpeg" title="Natural Leather Spanish Chair" price="$5040"/>
                     <Card widthPhone={widthPhone} img="/static/media/skin.jpeg" title="Blue Lagoon Skincare Lotion" price="$60"/>
                     <Card widthPhone={widthPhone} img="/static/media/cow2.jpg" title="Authentic Cowhide Leather Chair" price="$1158"/>
-                    <Card widthPhone={widthPhone} img="/static/media/chairspecial.jpeg" title="Kaydan Chair" price="$1598"/>
+                    <Card widthPhone={widthPhone} img="/static/media/china.jpeg" title="Oneida Moda 65-Piece Set" price="$145"/>
                     <Card widthPhone={widthPhone} img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
                     <Card widthPhone={widthPhone} img="/static/media/shelve.jpeg" title="Insight Series Four Shelf" price="$148"/>
-                    <Card widthPhone={widthPhone} img="/static/media/china.jpeg" title="Oneida Moda 65-Piece Set" price="$145"/>
+                    <Card widthPhone={widthPhone} img="/static/media/key.jpeg" title="Wireless Mechanical Keyboard" price="$49"/>
+                    <Card widthPhone={widthPhone} img="/static/media/chairspecial.jpeg" title="Kaydan Chair" price="$1598"/>
                     <Card widthPhone={widthPhone} img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
                     <Card widthPhone={widthPhone} img="/static/media/tv2.jpeg" title="FHD Flat-Screem Moniter" price="$143"/>
-                    <Card widthPhone={widthPhone} img="/static/media/key.jpeg" title="Wireless Mechanical Keyboard" price="$49"/>
                 </div>
             </div>
             <div className="spacer"></div>

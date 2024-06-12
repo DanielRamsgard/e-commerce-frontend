@@ -21,6 +21,10 @@ const Home = (props) => {
     const widthPhone = UseWindowWidth(300);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+    useEffect(() => {
         if (scrollPosition > 20) {
             setScroll(true);
         }

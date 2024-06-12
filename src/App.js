@@ -17,7 +17,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
-                <Route path="/categories/all" element={<Categories prevPage={prevPage}/>}></Route>
+                <Route path="/categories/all" element={<Categories prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );

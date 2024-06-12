@@ -4,10 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const LargeNavBar = (props) => {
     const navigate = useNavigate();
 
-    const goToPrev = () => {
-        navigate(props.prevPage);
-    }
-
     const scrollToTop = () => {
         if (props.prevPage === "/"){
             window.scrollTo({
@@ -15,7 +11,7 @@ const LargeNavBar = (props) => {
                 behavior: 'smooth'
               });
         } else {
-            goToPrev()
+            navigate("/");
         }
       };
 
@@ -28,7 +24,7 @@ const LargeNavBar = (props) => {
             </div>
             <div className="button-container">
                 <div className="shopping">
-                    <button className="anek-malayalam-font-light button">
+                    <button className="anek-malayalam-font-light button" onClick={() => {navigate("/categories/all#top");}}>
                         Categories
                     </button>
                     <button className="anek-malayalam-font-light button">
