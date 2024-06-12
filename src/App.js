@@ -9,6 +9,7 @@ import Lamps from './components/Lamps';
 import Kitchen from './components/Kitchen';
 import Chairs from './components/Chairs';
 import Skincare from './components/Skincare';
+import Product from './components/Product';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/categories/kitchen" element={<Kitchen prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/chairs" element={<Chairs prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/skincare" element={<Skincare prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/product" element={<Product prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );
