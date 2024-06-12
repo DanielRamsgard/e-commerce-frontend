@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BuyProduct = (props) => {
+    const [num, setNum] = useState(1);
+
+    const decreaseNum = () => {
+        if (num > 1) {
+            setNum(num - 1);
+        }
+    }
+
+    const increaseNum = () => {
+        if (num < 100) {
+            setNum(num + 1);
+        }
+    }
+
     return (
         <>
             <div className="product-buy-container">
@@ -39,13 +53,13 @@ const BuyProduct = (props) => {
                                     Quantity
                                 </div>
                                 <div className="quant-change-container">
-                                    <div className="left-right-control left">
+                                    <div className="left-right-control left" onClick={decreaseNum}>
                                         -
                                     </div>
                                     <div className="middle-number left-right-control">
-                                        1
+                                        {num}
                                     </div>
-                                    <div className="left-right-control right">
+                                    <div className="left-right-control right" onClick={increaseNum}>
                                         +
                                     </div>
                                 </div>
