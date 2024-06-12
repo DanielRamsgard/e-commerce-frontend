@@ -4,7 +4,7 @@ const BuyProduct = (props) => {
     return (
         <>
             <div className="product-buy-container">
-                <div className="product-buy-container-two">
+                <div className={ props.widthScreen ? "product-buy-container-two-new" : "product-buy-container-two"}>
                     <div className="product-title-text"> Comfy Chair </div>
                     <div className="product-images-container">
                         <div className="product-images-container-2">
@@ -35,7 +35,7 @@ const BuyProduct = (props) => {
                                 </div>
                             </div>
                             <div className="quantity-container">
-                                <div className="quant-price">
+                                <div className={props.widthScreen ? "quant-price-new" : "quant-price"}>
                                     Quantity
                                 </div>
                                 <div className="quant-change-container">
@@ -49,7 +49,7 @@ const BuyProduct = (props) => {
                                         +
                                     </div>
                                 </div>
-                                <div className="quant-price">
+                                <div className={props.widthScreen ? "quant-price-new" : "quant-price"}>
                                     $119.00
                                 </div>
                             </div>

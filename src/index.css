@@ -589,7 +589,7 @@ img-container-card-small {
 }
 
 
-.left-right-control, .quant-price, .mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
+.quant-price-new, .left-right-control, .quant-price, .mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
     font-family: "Prompt", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -861,13 +861,17 @@ input {
     flex-wrap: wrap;
 }
 
-.product-buy-container-two {
+.product-buy-container-two-new, .product-buy-container-two {
     position: relative;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.product-buy-container-two-new {
+    width: 97%;
 }
 
 .product-title-text {
@@ -1018,9 +1022,13 @@ input {
     width: 100%;
 }
 
-.quant-price {
+.quant-price-new, .quant-price {
     font-size: 28px;
     font-weight: 400;
+}
+
+.quant-price-new {
+    font-size: 20px
 }
 
 .quant-change-container {

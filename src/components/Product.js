@@ -18,6 +18,7 @@ const Product = (props) => {
     const widthBoolNav = UseWindowWidth(700);
     const widthPhone = UseWindowWidth(300);
     const widthThree = UseWindowWidth(450);
+    const widthScreen = UseWindowWidth(1150);
 
     useEffect(() => {
         if (scrollPosition > 20) {
@@ -35,7 +36,7 @@ const Product = (props) => {
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <BuyProduct widthThree={widthThree}/>
+            <BuyProduct widthThree={widthThree} widthScreen={widthScreen}/>
             <div className="spacer"></div>
             <div className="trend-container">
                 <div className="trend">
