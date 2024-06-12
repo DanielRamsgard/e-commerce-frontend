@@ -589,7 +589,7 @@ img-container-card-small {
 }
 
 
-.quant-price-new, .left-right-control, .quant-price, .mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
+.product-title-text-new, .quant-price-new, .left-right-control, .quant-price, .mini-title, .product-title-text, .text-bottom, .clout, .newsletter-text, .prompt-black {
     font-family: "Prompt", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -885,6 +885,12 @@ input {
     transform: translate(-50%, 25%);
 }
 
+.product-title-text-new {
+    z-index: 800;
+    font-size: 25px;
+    text-align: center;
+}
+
 .product-info-container {
     display: flex;
     justify-content: center;
@@ -1167,8 +1173,19 @@ input {
 .three-max-image-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 340px;
     height: 100px;
+}
+
+.three-max-image-container-new {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    height: 340px;
 }
 
 .product-image-check-container {
