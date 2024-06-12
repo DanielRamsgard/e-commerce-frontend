@@ -12,8 +12,13 @@ const CustomCarousel = () => {
           breakpoint: { max: 4000, min: 3000 },
           items: 8
         },
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 3000, min: 2000 },
+            items: 6
+          },
         desktop: {
-          breakpoint: { max: 3000, min: 1400 },
+          breakpoint: { max: 2000, min: 1400 },
           items: 5
         },
         desktopSmall: {
