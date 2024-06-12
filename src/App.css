@@ -17,6 +17,7 @@
     --button-box: rgba(55, 55, 55, 255);
     --grey-cat: rgb(150,150,150);
     --height: 30px;
+    --grey-button: rgb(50,50,50);
 }
 
 .nav-bar-small {
@@ -827,4 +828,8 @@ input {
     font-size: 14px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.cat-button:hover {
+    color: var(--grey-button);
 }
