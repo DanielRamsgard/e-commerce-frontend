@@ -9,7 +9,7 @@ import BuyProduct from './BuyProduct';
 
 const Product = (props) => {
     useEffect(() => {
-        props.updatePrevPage("/categories/all");
+        props.updatePrevPage("/product");
         window.scrollTo(0, 0);
       }, [props]);
 
