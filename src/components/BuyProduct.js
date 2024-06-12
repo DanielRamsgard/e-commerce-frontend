@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const BuyProduct = (props) => {
     const [num, setNum] = useState(1);
+    const [img, setImg] = useState("/static/media/spanish2.jpeg");
 
     const decreaseNum = () => {
         if (num > 1) {
@@ -22,18 +23,18 @@ const BuyProduct = (props) => {
                     <div className={ props.widthSmall ? "product-title-text-new" : "product-title-text"}> Comfy Chair </div>
                     <div className={ props.widthSmall ? "product-images-container-new" : "product-images-container"}>
                         <div className="product-images-container-2">
-                            <div className="product-big-image-container">
-                                <img src="/static/media/spanish2.jpeg" className="product-image-check"></img>
+                            <div className={ props.widthSmall ? "product-big-image-container-new" : "product-big-image-container"}>
+                                <img src={img} className="product-image-check"></img>
                             </div>
                             <div className="spacer-2"></div>
                             <div className={ props.widthSmallSmall ? "three-max-image-container-new" : "three-max-image-container"}>
-                                <div className="product-image-check-container">
+                                <div className="product-image-check-container" onMouseOver={() => { setImg("/static/media/spanish.jpeg"); }}>
                                     <img src="/static/media/spanish.jpeg" className="product-image-check"></img>
                                 </div>
-                                <div className="product-image-check-container">
+                                <div className="product-image-check-container" onMouseOver={() => { setImg("/static/media/spanish1.jpeg"); }}>
                                     <img src="/static/media/spanish1.jpeg" className="product-image-check"></img>
                                 </div>
-                                <div className="product-image-check-container">
+                                <div className="product-image-check-container" onMouseOver={() => { setImg("/static/media/spanish2.jpeg"); }}>
                                     <img src="/static/media/spanish2.jpeg" className="product-image-check"></img>
                                 </div>
                             </div>
