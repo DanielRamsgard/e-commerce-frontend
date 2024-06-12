@@ -7,7 +7,23 @@ const BuyProduct = () => {
                 <div className="product-buy-container-two">
                     <div className="product-title-text"> Comfy Chair </div>
                     <div className="product-images-container">
-
+                        <div className="product-images-container-2">
+                            <div className="product-big-image-container">
+                                <img src="/static/media/spanish2.jpeg" className="product-image-check"></img>
+                            </div>
+                            <div className="spacer-2"></div>
+                            <div className="three-max-image-container">
+                                <div className="product-image-check-container">
+                                    <img src="/static/media/spanish.jpeg" className="product-image-check"></img>
+                                </div>
+                                <div className="product-image-check-container">
+                                    <img src="/static/media/spanish1.jpeg" className="product-image-check"></img>
+                                </div>
+                                <div className="product-image-check-container">
+                                    <img src="/static/media/spanish2.jpeg" className="product-image-check"></img>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="product-info-container">
                         <div className="product-info-container-2">
