@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BuyProduct = () => {
+const BuyProduct = (props) => {
     return (
         <>
             <div className="product-buy-container">
@@ -65,7 +65,7 @@ const BuyProduct = () => {
                     </div>
                 </div>
                 <div className="spacer"></div>
-                <div className="context-container">
+                <div className={ props.widthThree ? "context-container-new" : "context-container"}>
                     <div className="context-container-2">
                         <div className="context-container-3">
                             <div className="mini-title"> Texture: </div>

@@ -35,6 +35,8 @@ code {
     --grey-button: rgb(50,50,50);
     --product-grey: rgba(229, 229, 229, 255);
     --red-buy: rgba(182, 0, 44, 255);
+    --hover-img: rgb(180,180,180);
+    --box-shadow-color-2: rgb(200,200,200);
 }
 
 .nav-bar-small {
@@ -895,6 +897,16 @@ input {
     row-gap: 20px;
 }
 
+.context-container-new {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
 .context-container-2 {
     width: 31.5%;
     background-color: var(--product-grey);
@@ -1078,15 +1090,21 @@ input {
 
 .three-max-image-container {
     display: flex;
-    justify-content: center;
-    width: inherit;
-    height: 20%;
+    justify-content: space-between;
+    width: 340px;
+    height: 100px;
 }
 
 .product-image-check-container {
-    width: 33.3%;
-    aspect-ratio: 1/1;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
+    background-color: black;
+}
+
+.product-image-check-container:hover {
+    border: 1px solid var(--hover-img);
+    box-shadow: 0px 2px 6px var(--box-shadow-color-2);
 }
 
 .product-image-check {
