@@ -1166,12 +1166,6 @@ input {
 }
 
 .product-big-image-container {
-    height: 350px;
-    overflow: hidden;
-    width: inherit;
-}
-
-.product-big-image-container-new {
     height: 340px;
     overflow: hidden;
     width: inherit;

@@ -23,7 +23,7 @@ const BuyProduct = (props) => {
                     <div className={ props.widthSmall ? "product-title-text-new" : "product-title-text"}> Comfy Chair </div>
                     <div className={ props.widthSmall ? "product-images-container-new" : "product-images-container"}>
                         <div className="product-images-container-2">
-                            <div className={ props.widthSmall ? "product-big-image-container-new" : "product-big-image-container"}>
+                            <div className="product-big-image-container">
                                 <img src={img} className="product-image-check"></img>
                             </div>
                             <div className="spacer-2"></div>
