@@ -8,10 +8,6 @@ const SmallNavBar = (props) => {
         navigate('/navigation');
     }
 
-    const goToPrev = () => {
-        navigate(props.prevPage);
-    }
-
     const scrollToTop = () => {
         if (props.prevPage === "/"){
             window.scrollTo({
