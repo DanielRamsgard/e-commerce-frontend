@@ -17,7 +17,7 @@ function App() {
     const [imgOne, setImgOne] = useState("/static/media/spanish.jpeg");
     const [imgTwo, setImgTwo] = useState("/static/media/spanish1.jpeg");
     const [imgThree, setImgThree] = useState("/static/media/spanish2.jpeg");
-    const [description, setDescription] = useState("Sink into the plush cushions, enveloped in soft, velvety upholstery that invites you to unwind after a long day. The ergonomic design ensures optimal support for your back, neck, and shoulders, promoting relaxation and reducing strain.");
+    const [description, setDescription] = useState("The Natural Leather Spanish Chair combines timeless craftsmanship with modern comfort. Featuring high-quality leather and a sturdy wooden frame, it exudes elegance and durability. Ideal for living rooms or offices, it adds a touch of classic Spanish charm to any interior.");
     const [price, setPrice] = useState(5040);
     const [title, setTitle] = useState("Natural Leather Spanish Chair");
     const [texture, setTexture] = useState("Leather");

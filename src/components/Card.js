@@ -1,9 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Card = (props) => {
+    const navigate = useNavigate();
+
+    const handleCardClick = (imgOne, imgTwo, imgThree, description, price, title, texture, weight, size) => {
+        props.updateProduct(imgOne, imgTwo, imgThree, description, price, title, texture, weight, size);
+        navigate("/product");
+        
+    }
+
     return (
         <>
-            <div className={props.widthPhone ? "card-new" : "card"}>
+            <div className={props.widthPhone ? "card-new" : "card"}  onClick={() => {handleCardClick(props.imgOne, props.imgTwo, props.imgThree, props.description, props.price, props.title, props.texture, props.weight, props.size);}}>
                 <div className={props.widthPhone ? "card-container-2-new"  : "card-container-2" }>
                     <img alt="Card" src={props.img} className="card-img"></img>
                 </div>
@@ -14,7 +23,7 @@ const Card = (props) => {
                 </div>
                 <div className="card-price">
                     <div className="card-price-text">
-                        {props.price}
+                        {"$" + props.price}
                     </div>
                 </div>
             </div>

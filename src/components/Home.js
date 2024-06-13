@@ -50,14 +50,14 @@ const Home = (props) => {
                     </div>
                     <div className="box">
                         <div className="products-container">
-                            <Card widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="$489"/>
-                            <Card widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
-                            <Card widthPhone={widthPhone} img="/static/media/skincream.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
-                            <Card widthPhone={widthPhone} img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
-                            <Card widthPhone={widthPhone} img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="$49"/>
-                            <Card widthPhone={widthPhone} img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
-                            <Card widthPhone={widthPhone} img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="$117"/>
-                            <Card widthPhone={widthPhone} img="/static/media/whitechair.jpg" title="Traditional Armchair" price="$93"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="489"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="354"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/skincream.jpeg" title="Anti-Aging, Microbiome Cream" price="68"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="30"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="49"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="649"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="117"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/whitechair.jpg" title="Traditional Armchair" price="93"/>
                         </div>
                     </div>
                     <div className="spacer"></div>
