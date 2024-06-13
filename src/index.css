@@ -255,6 +255,7 @@ code {
     color: white;
     font-weight: bold;
     background-color: var(--red-color);
+    font-size: 24px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -494,7 +495,7 @@ img-container-card-small {
     left: 2%;
 }
 
-.mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.logo, .mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }

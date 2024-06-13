@@ -19,7 +19,7 @@ const LargeNavBar = (props) => {
         <>
             <div className="logo-container">
                 <div className="logo" onClick={scrollToTop}>
-                    甜蜜的家
+                    honey
                 </div>
             </div>
             <div className="button-container">
