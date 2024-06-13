@@ -11,7 +11,7 @@ const Product = (props) => {
     useEffect(() => {
         props.updatePrevPage("/product");
         window.scrollTo(0, 0);
-      }, [props.updatePrevPage]);
+      }, []);
 
     const scrollPosition = UseScrollPosition();
     const [scroll, setScroll] = useState(false);
