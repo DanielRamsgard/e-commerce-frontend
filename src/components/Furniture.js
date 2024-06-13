@@ -50,9 +50,9 @@ const Furniture = (props) => {
             <div className="spacer-2"></div>
             <div className="box">
                 <div className="products-container" id="top">
-                    <Card widthPhone={widthPhone} img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="$649"/>
-                    <Card widthPhone={widthPhone} img="/static/media/vase.jpeg" title="Cube Lolo Vase Black" price="$263"/>
-                    <Card widthPhone={widthPhone} img="/static/media/shelve.jpeg" title="Insight Series Four Shelf" price="$148"/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/cabinet2.jpeg" imgTwo="/static/media/cabinet1.jpeg" imgThree="/static/media/cabinet.jpeg" title="Oak Sauder Collection Bookcase" price={649} texture="Oak Wood" weight="35kg" size="130cm 120cm" description="The Oak Sauder Collection Bookcase blends classic design with practical storage. Crafted from sturdy oak, it features multiple adjustable shelves, accommodating books and decor. Its timeless style and durable construction make it a versatile addition to any room."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/vase.jpeg" imgTwo="" imgThree="" title="Cube Lolo Vase Black" price={263} texture="Clay" weight="10kg" size="14cm x 14cm" description="The Cube Lolo Vase in Black epitomizes modern elegance with its sleek, minimalist design. Crafted from high-quality ceramic, it adds a touch of sophistication to any space. Perfect for showcasing your favorite flowers or as a standalone decor piece, enhancing your home with understated charm."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/shelve.jpeg" imgTwo="" imgThree="" title="Insight Series Four Shelf" price={148} texture="Steel" weight="15kg" size="100cm x 15cm" description="The Insight Series Four Shelf unit combines contemporary design with practical functionality. Crafted from durable materials, it offers ample storage and display space. Ideal for organizing books, decor, or media, it enhances any room with modern style and versatility."/>
                 </div>
             </div>
             <div className="spacer"></div>

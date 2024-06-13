@@ -50,9 +50,9 @@ const Lamps = (props) => {
             <div className="spacer-2"></div>
             <div className="box">
                 <div className="products-container" id="top">
-                    <Card widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="$354"/>
-                    <Card widthPhone={widthPhone} img="/static/media/dome.jpeg" title="Matt Black Dome Pendant" price="$460"/>
-                    <Card widthPhone={widthPhone} img="/static/media/light1.jpeg" title="Here Comes the Sun Pendant" price="$1304"/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/lamp2.jpeg" imgTwo="/static/media/lamp.jpeg" imgThree="/static/media/lamp1.jpeg" title="Ceramic Whisper Pendant Lamp" price={354} texture="Clay" weight="7kg" size="10cm x 10cm" description="The Ceramic Whisper Pendant Lamp elegantly illuminates any space with its soft, diffused light. Crafted from high-quality ceramic, its minimalist design complements modern interiors, making it an ideal choice for dining areas, kitchens, or cozy corners."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/dome.jpeg" imgTwo="/static/media/dome1.jpeg" imgThree="/static/media/dome2.jpeg" title="Matt Black Dome Pendant" price={460} texture="Clay" weight="20kg" size="30cm x 30cm" description="The Matt Black Dome Pendant adds a touch of modern elegance to any space. Its sleek, matte finish and minimalist design provide a sophisticated ambiance. Perfect for kitchens, dining areas, or living rooms, enhancing your home's contemporary aesthetic beautifully."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/light1.jpeg" imgTwo="/static/media/light.jpeg" imgThree="/static/media/light2.jpeg" title="Here Comes the Sun Pendant" price={1304} texture="Clay" weight="15kg" size="12cm x 12cm" description="The Here Comes the Sun Pendant radiates warmth and charm with its sun-inspired design. Crafted from durable materials, its artistic silhouette enhances any space with a touch of celestial elegance. Ideal for lighting up dining areas or cozy nooks, creating a welcoming ambiance wherever it shines."/>
                 </div>
             </div>
             <div className="spacer"></div>

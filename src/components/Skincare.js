@@ -50,10 +50,10 @@ const Skincare = (props) => {
             <div className="spacer-2"></div>
             <div className="box">
                 <div className="products-container" id="top">
-                    <Card widthPhone={widthPhone} img="/static/media/skincream.jpeg" title="Anti-Aging, Microbiome Cream" price="$68"/>
-                    <Card widthPhone={widthPhone} img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="$30"/>
-                    <Card widthPhone={widthPhone} img="/static/media/chanel.jpeg" title="Boy De Chanel Toning Lotion" price="$65"/>
-                    <Card widthPhone={widthPhone} img="/static/media/skin.jpeg" title="Blue Lagoon Skincare Lotion" price="$60"/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/skincream.jpeg" imgTwo="" imgThree="" title="Anti-Aging, Microbiome Cream" price={68} texture="Cream" weight="2kg" size="2cm x 2cm" description="Revitalize your skin with Anti-Aging Microbiome Cream. This innovative formula supports a balanced microbiome, reducing wrinkles and fine lines while enhancing skin’s natural radiance. Ideal for all skin types, it promotes a youthful, healthy complexion."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/oil.jpeg" imgTwo="" imgThree="" title="Jimmy Boyd Body oil 2000ml" price={30} texture="Oil" weight="1kg" size="3cm x 3cm" description="Indulge in luxury with Jimmy Boyd Body Oil. This 2000ml bottle provides long-lasting hydration, leaving skin soft and radiant. Infused with natural ingredients, it nourishes and revitalizes, making it perfect for daily use or special pampering."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/chanel.jpeg" imgTwo="/static/media/chanel1.jpeg" imgThree="/static/media/chanel2.jpeg" title="Boy De Chanel Toning Lotion" price={65} texture="Plastic" weight="1kg" size="5cm x 4cm" description="Boy De Chanel Toning Lotion revitalizes and refreshes your skin, leaving it hydrated and balanced. Infused with soothing ingredients, it minimizes pores and controls excess oil, offering a matt finish. Perfect for daily use, enhancing your skincare routine effortlessly."/>
+                    <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/skin.jpeg" imgTwo="/static/media/skin1.jpeg" imgThree="/static/media/skin2.jpeg" title="Blue Lagoon Skincare Lotion" price={60} texture="Plastic" weight="2kg" size="4cm x 4cm" description="Blue Lagoon Skincare Lotion hydrates and rejuvenates your skin with natural minerals. Infused with algae extracts, it promotes a radiant, youthful complexion. Suitable for all skin types, this lotion provides deep moisture and revitalization for a healthy, glowing look."/>
                 </div>
             </div>
             <div className="spacer"></div>
