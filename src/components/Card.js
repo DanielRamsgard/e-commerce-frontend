@@ -14,7 +14,7 @@ const Card = (props) => {
         <>
             <div className={props.widthPhone ? "card-new" : "card"}  onClick={() => {handleCardClick(props.imgOne, props.imgTwo, props.imgThree, props.description, props.price, props.title, props.texture, props.weight, props.size);}}>
                 <div className={props.widthPhone ? "card-container-2-new"  : "card-container-2" }>
-                    <img alt="Card" src={props.img} className="card-img"></img>
+                    <img alt="Card" src={props.imgOne} className="card-img"></img>
                 </div>
                 <div className="card-title">
                     <div className="card-title-text card-text">

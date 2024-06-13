@@ -50,14 +50,14 @@ const Home = (props) => {
                     </div>
                     <div className="box">
                         <div className="products-container">
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/chair.jpeg" title="Little Armchair Sheepskin" price="489"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/lamp2.jpeg" title="Ceramic Whisper Pendant Lamp" price="354"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/skincream.jpeg" title="Anti-Aging, Microbiome Cream" price="68"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/oil.jpeg" title="Jimmy Boyd Body oil 2000ml" price="30"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/toaster.jpeg" title="GE Stainless Steel Toaster" price="49"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/cabinet2.jpeg" title="Oak Sauder Collection Bookcase" price="649"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/cutting.jpeg" title="Ironwood Charleston Board" price="117"/>
-                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} img="/static/media/whitechair.jpg" title="Traditional Armchair" price="93"/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/chair.jpeg" imgTwo="/static/media/chair1.jpeg" imgThree="/static/media/chair2.jpeg" title="Little Armchair Sheepskin" price={489} texture="Sheepskin" weight="20kg" size="70cm x 70cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/lamp2.jpeg" imgTwo="/static/media/lamp.jpeg" imgThree="/static/media/lamp1.jpeg" title="Ceramic Whisper Pendant Lamp" price={354} texture="Clay" weight="7kg" size="10cm x 10cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/skincream.jpeg" imgTwo="" imgThree="" title="Anti-Aging, Microbiome Cream" price={68} texture="Cream" weight="2kg" size="2cm x 2cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/oil.jpeg" imgTwo="" imgThree="" title="Jimmy Boyd Body oil 2000ml" price={30} texture="Oil" weight="1kg" size="3cm x 3cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/toaster.jpeg" imgTwo="/static/media/toaster1.jpeg" imgThree="/static/media/toaster2.jpeg" title="GE Stainless Steel Toaster" price={49} texture="Aluminum" weight="10kg" size="20cm x 12cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/cabinet2.jpeg" imgTwo="/static/media/cabinet1.jpeg" imgThree="/static/media/cabinet.jpeg" title="Oak Sauder Collection Bookcase" price={649} texture="Oak Wood" weight="35kg" size="130cm 120cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/cutting.jpeg" imgTwo="/static/media/cutting1.jpeg" imgThree="/static/media/cutting2.jpeg" title="Ironwood Charleston Board" price={117} texture="Spruce Wood" weight="2kg" size="20cm x 18cm" description=""/>
+                            <Card updateProduct={props.updateProduct} widthPhone={widthPhone} imgOne="/static/media/whitechair.jpg" imgTwo="" imgThree="" title="Traditional Armchair" price={93} texture="Cloth" weight="40kg" size="60cm x 55cm" description=""/>
                         </div>
                     </div>
                     <div className="spacer"></div>
