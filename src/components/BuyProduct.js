@@ -86,7 +86,7 @@ const BuyProduct = (props) => {
                                 <div className="add-to-cart" onClick={() => {props.setCartCount(props.cartCount + currentCount)}}>
                                     ADD TO CART
                                 </div>
-                                <div className="buy-now">
+                                <div className="buy-now" onClick={() => {props.setCartCount(props.cartCount + currentCount)}}>
                                     BUY NOW
                                 </div>
                             </div>
