@@ -13,6 +13,7 @@ import Product from './components/Product';
 
 
 function App() {
+    const [cartCount, setCartCount] = useState(0);
     const [prevPage, setPrevPage] = useState("/");
     const [imgOne, setImgOne] = useState("/static/media/spanish.jpeg");
     const [imgTwo, setImgTwo] = useState("/static/media/spanish1.jpeg");
@@ -43,7 +44,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/" element={<Home cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
                 <Route path="/categories/all" element={<CategoriesAll prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/furniture" element={<Furniture prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
@@ -52,7 +53,7 @@ function App() {
                 <Route path="/categories/kitchen" element={<Kitchen prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/chairs" element={<Chairs prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/skincare" element={<Skincare prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/product" element={<Product updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/product" element={<Product cartCount={cartCount} setCartCount={setCartCount} updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );

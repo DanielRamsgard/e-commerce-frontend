@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const BuyProduct = (props) => {
     const [num, setNum] = useState(1);
     const [img, setImg] = useState(props.imgOne);
+    const [currentCount, setCurrentCount] = useState(1);
 
     useEffect(() => {
         setImg(props.imgOne);
@@ -12,12 +13,14 @@ const BuyProduct = (props) => {
     const decreaseNum = () => {
         if (num > 1) {
             setNum(num - 1);
+            setCurrentCount(currentCount - 1);
         }
     }
 
     const increaseNum = () => {
         if (num < 100) {
             setNum(num + 1);
+            setCurrentCount(currentCount + 1);
         }
     }
 
@@ -80,7 +83,7 @@ const BuyProduct = (props) => {
                                 </div>
                             </div>
                             <div className={props.widthSmall ? "add-to-cart-container-new" : "add-to-cart-container"}>
-                                <div className="add-to-cart">
+                                <div className="add-to-cart" onClick={() => {props.setCartCount(props.cartCount + currentCount)}}>
                                     ADD TO CART
                                 </div>
                                 <div className="buy-now">

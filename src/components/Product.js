@@ -11,7 +11,7 @@ const Product = (props) => {
     useEffect(() => {
         props.updatePrevPage("/product");
         window.scrollTo(0, 0);
-      }, [props]);
+      }, [props.updatePrevPage]);
 
     const scrollPosition = UseScrollPosition();
     const [scroll, setScroll] = useState(false);
@@ -35,11 +35,11 @@ const Product = (props) => {
     return (
         <div>
             <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                <NavBar prevPage={props.prevPage} widthBool={widthBoolNav}/>
+                <NavBar cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <BuyProduct size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
+            <BuyProduct cartCount={props.cartCount} setCartCount={props.setCartCount} size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
             <div className="spacer"></div>
             <div className="trend-container">
                 <div className="trend">
