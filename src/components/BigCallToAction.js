@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BigCallToAction = (props) => {
+    const navgiate = useNavigate();
+
     if (props.bool){
         return (
             <> 
@@ -14,7 +17,7 @@ const BigCallToAction = (props) => {
                                 <div className="call-action">
                                     Our roducts are all made to standard sizes so that you can mix and match them freely.
                                 </div>
-                                <button className="shop-now">
+                                <button className="shop-now" onClick={() => {navgiate("/categories/all")}}>
                                     SHOP NOW
                                 </button>
                             </div>
@@ -42,7 +45,7 @@ const BigCallToAction = (props) => {
                                 <div className="call-action">
                                     Our roducts are all made to standard sizes so that you can mix and match them freely.
                                 </div>
-                                <button className="shop-now">
+                                <button className="shop-now" onClick={() => {navgiate("/categories/all")}}>
                                     SHOP NOW
                                 </button>
                             </div>
