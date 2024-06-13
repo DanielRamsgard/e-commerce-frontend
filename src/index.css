@@ -1107,6 +1107,7 @@ input {
 }
 
 .left-right-control {
+    cursor: pointer;
     user-select: none;
     cursor: pointer;
     font-size: 25px;
@@ -1134,6 +1135,7 @@ input {
     background-color: var(--product-grey);
     border-right: .5px solid black;
     border-left: .5px solid black;
+    cursor: auto;
 }
 
 .left-right-control:hover {
