@@ -13,9 +13,9 @@ const SmallCard = (props) => {
 
     return (
         <>
-            <div className="card-small" onClick={() => {console.log('here2');handleCardClick("/static/media/chanel.jpeg", "/static/media/chanel1.jpeg", "/static/media/chanel2.jpeg", "this is a description", 65, "Boy De Chanel Toning Lotion", "Lotion", "1kg", "3cm x 3cm");}}>
+            <div className="card-small" onClick={() => {handleCardClick(props.imgOne, props.imgTwo, props.imgThree, props.description, props.price, props.title, props.texture, props.weight, props.size);}}>
                 <div className="img-container-card-small">
-                    <img alt="Card" src={props.img} className="card-img-small"></img>
+                    <img alt="Card" src={props.imgOne} className="card-img-small"></img>
                 </div>
                 <div className="card-title-small">
                     <div className="card-title-text card-text">
@@ -24,7 +24,7 @@ const SmallCard = (props) => {
                 </div>
                 <div className="card-price-small">
                     <div className="card-price-text">
-                        {props.price}
+                        {"$" + props.price}
                     </div>
                 </div>
             </div>

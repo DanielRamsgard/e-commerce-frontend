@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const BuyProduct = (props) => {
     const [num, setNum] = useState(1);
     const [img, setImg] = useState(props.imgOne);
+
+    useEffect(() => {
+        setImg(props.imgOne);
+      }, [props]);
 
     const decreaseNum = () => {
         if (num > 1) {

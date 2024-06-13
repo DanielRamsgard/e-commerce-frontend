@@ -71,7 +71,7 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="spacer-2"></div>
-                    <CustomCarousel widthPhone={widthPhone}/>
+                    <CustomCarousel updateProduct={props.updateProduct} widthPhone={widthPhone}/>
                     <div className="spacer"></div>
                     {widthBoolCallToAction ? <SmallCallToAction text={"Comfortable & Elegant Living"} /> : <BigCallToAction text={"Comfortable & Elegant Living"} img="/static/media/wallpaper1.jpeg" bool={false}/>}
                     <div className="spacer"></div>
