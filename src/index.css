@@ -1106,6 +1106,7 @@ input {
 }
 
 .left-right-control {
+    user-select: none;
     cursor: pointer;
     font-size: 25px;
     font-weight: 600;
