@@ -7,7 +7,6 @@ const SmallCard = (props) => {
     const handleCardClick = (imgOne, imgTwo, imgThree, description, price, title, texture, weight, size) => {
         props.updateProduct(imgOne, imgTwo, imgThree, description, price, title, texture, weight, size);
         navigate("/product");
-        console.log("here");
         
     }
 
