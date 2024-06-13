@@ -31,7 +31,7 @@ const LargeNavBar = (props) => {
                         Product Page
                     </button>
                     <div className="cart">
-                        <div className="ticker">
+                        <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}
                             </div>

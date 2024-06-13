@@ -29,7 +29,7 @@ const SmallNavBar = (props) => {
             <div className="button-container">
                 <div className="shopping">
                     <div className="cart">
-                        <div className="ticker">
+                        <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}
                             </div>

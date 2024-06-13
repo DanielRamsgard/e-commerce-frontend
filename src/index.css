@@ -1210,3 +1210,20 @@ input {
     justify-content: center;
     align-items: center;
 }
+
+.null {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top:-65%;
+    right: -30%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
