@@ -6,7 +6,8 @@ const BuyProduct = (props) => {
 
     useEffect(() => {
         setImg(props.imgOne);
-      }, [props]);
+
+      }, [props.imgOne]);
 
     const decreaseNum = () => {
         if (num > 1) {
