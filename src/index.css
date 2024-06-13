@@ -1194,7 +1194,6 @@ input {
     height: 100px;
     overflow: hidden;
     border: 1px solid white;
-    background-color: black;
 }
 
 .product-image-check-container:hover {
