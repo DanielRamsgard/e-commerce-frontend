@@ -33,23 +33,23 @@ const BuyProduct = (props) => {
                             </div>
                             <div className="spacer-2"></div>
                             <div className={ props.widthSmallSmall ? "three-max-image-container-new" : "three-max-image-container"}>
-                            {props.imgOne !== '' && (
-                            <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgOne); }}>
-                                <img alt="Small" src={props.imgOne} className="product-image-check" />
-                            </div>
-                            )}
+                                {props.imgOne !== '' && (
+                                <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgOne); }}>
+                                    <img alt="Small" src={props.imgOne} className="product-image-check" />
+                                </div>
+                                )}
 
-                            {props.imgTwo !== '' && (
-                            <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgTwo); }}>
-                                <img alt="Small" src={props.imgTwo} className="product-image-check" />
-                            </div>
-                            )}
+                                {props.imgTwo !== '' && (
+                                <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgTwo); }}>
+                                    <img alt="Small" src={props.imgTwo} className="product-image-check" />
+                                </div>
+                                )}
 
-                            {props.imgThree !== '' && (
-                            <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgThree); }}>
-                                <img alt="Small" src={props.imgThree} className="product-image-check" />
-                            </div>
-                            )}
+                                {props.imgThree !== '' && (
+                                <div className="product-image-check-container" onMouseOver={() => { setImg(props.imgThree); }}>
+                                    <img alt="Small" src={props.imgThree} className="product-image-check" />
+                                </div>
+                                )}
                             </div>
                         </div>
                     </div>
