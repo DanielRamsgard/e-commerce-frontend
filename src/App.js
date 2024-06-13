@@ -45,7 +45,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
-                <Route path="/categories/all" element={<CategoriesAll prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/all" element={<CategoriesAll prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/furniture" element={<Furniture prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/electronics" element={<Electronics prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/lamps" element={<Lamps prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
