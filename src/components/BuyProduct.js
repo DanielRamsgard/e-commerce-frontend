@@ -20,6 +20,7 @@ const BuyProduct = (props) => {
     const increaseNum = () => {
         if (num < 100) {
             setNum(num + 1);
+            
             setCurrentCount(currentCount + 1);
         }
     }
@@ -83,10 +84,10 @@ const BuyProduct = (props) => {
                                 </div>
                             </div>
                             <div className={props.widthSmall ? "add-to-cart-container-new" : "add-to-cart-container"}>
-                                <div className="add-to-cart" onClick={() => {props.setCartCount(props.cartCount + currentCount)}}>
+                                <div className="add-to-cart" onClick={() => {(props.cartCount < 100 && (props.cartCount + currentCount < 100))? props.setCartCount(props.cartCount + currentCount) : props.setCartCount(props.cartCount)}}>
                                     ADD TO CART
                                 </div>
-                                <div className="buy-now" onClick={() => {props.setCartCount(props.cartCount + currentCount)}}>
+                                <div className="buy-now" onClick={() => {(props.cartCount < 100 && (props.cartCount + currentCount < 100))? props.setCartCount(props.cartCount + currentCount) : props.setCartCount(props.cartCount)}}>
                                     BUY NOW
                                 </div>
                             </div>
