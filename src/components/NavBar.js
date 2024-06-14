@@ -12,7 +12,7 @@ const NavBar = (props) => {
     return (
         <>
             <div className="nav-container">
-                {props.widthBool ? <SmallNavBar updateCart={updateCart} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage}/> : <LargeNavBar updateCart={updateCart} cart={cart} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage}/>}
+                {props.widthBool ? <SmallNavBar cart={cart} updateCart={updateCart} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage}/> : <LargeNavBar updateCart={updateCart} cart={cart} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage}/>}
 
             </div>
         </>

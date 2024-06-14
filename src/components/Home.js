@@ -38,7 +38,7 @@ const Home = (props) => {
         <>
             <div>
                 <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                    <NavBar total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
+                    <NavBar updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
                 </div>
                 <div className="content" id="home">
                     <div className="categories">

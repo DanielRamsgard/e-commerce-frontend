@@ -25,6 +25,11 @@ function App() {
     const [texture, setTexture] = useState("Leather");
     const [weight, setWeight] = useState("25kg");
     const [size, setSize] = useState("80cm x 50cm");
+    const [cartTwo, setCartTwo] = useState(false);
+
+    function updateCartTwo(bool) {
+        setCartTwo(bool);
+    }
 
     function updateProduct(imgOne, imgTwo, imgThree, description, price, title, texture, weight, size) {
         setImgOne(imgOne);
@@ -45,16 +50,16 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home total={total} cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/" element={<Home updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
-                <Route path="/categories/all" element={<CategoriesAll total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/furniture" element={<Furniture total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/electronics" element={<Electronics total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/lamps" element={<Lamps total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/kitchen" element={<Kitchen total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/chairs" element={<Chairs total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/categories/skincare" element={<Skincare total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/product" element={<Product total={total} cartCount={cartCount} setCartCount={setCartCount} updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/all" element={<CategoriesAll updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/furniture" element={<Furniture updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/electronics" element={<Electronics updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/lamps" element={<Lamps updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/kitchen" element={<Kitchen updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/chairs" element={<Chairs updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/categories/skincare" element={<Skincare updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/product" element={<Product updateCartTwo={updateCartTwo} cartTwo={cartTwo} total={total} cartCount={cartCount} setCartCount={setCartCount} updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
             </Routes>
         </Router>
     );

@@ -74,8 +74,8 @@ const Cart = (props) => {
                                                     Shipping Info.
                                                 </div>
                                                 <input className="subscribe-news-new" placeholder="your@email.com" id="input-email"></input>
-                                                <input className="subscribe-news-new" placeholder="Number Street Address, Unit #, City, ZIP Code, Country" id="input-address"></input>
-                                                <input className="subscribe-news-new" placeholder="Credit Card Number" id="input-credit-card"></input>
+                                                <input className="subscribe-news-new" placeholder="# Address, Unit #, City, ZIP, Country" id="input-address"></input>
+                                                <input className="subscribe-news-new" placeholder="Credit Card #" id="input-credit-card"></input>
                                                 <button className="shop-now shop-now-2 shop-now-3 subscribe-news-new" onClick={() => {/* send info to server */}}>
                                                 Checkout Now
                                             </button>
