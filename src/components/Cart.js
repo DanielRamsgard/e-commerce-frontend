@@ -63,7 +63,7 @@ const Cart = (props) => {
                                                     Shipping Info.
                                                 </div>
                                                 <input className="subscribe-news-new" placeholder="your@email.com" id="input-email"></input>
-                                                <input className="subscribe-news-new" placeholder="Number Street Name, City, ZIP Code, Country" id="input-email"></input>
+                                                <input className="subscribe-news-new" placeholder="Number Street Address, Unit #, City, ZIP Code, Country" id="input-email"></input>
                                                 <input className="subscribe-news-new" placeholder="Credit Card Number" id="input-email"></input>
                                             </div>
                                         </div>
