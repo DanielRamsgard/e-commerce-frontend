@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import CartCard from './CartCard';
 import UseWindowWidth from './WindowWidth';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = (props) => {
+    const navigate = useNavigate();
     const widthCart = UseWindowWidth(500);
     const [checkout, setCheckout] = useState(false);
 
@@ -32,7 +34,7 @@ const Cart = (props) => {
                                 </div>
                                 <div className="pad-top">
                                     
-                                    <button className="shop-now" onClick={() => {props.updateCart(false)}}>
+                                    <button className="shop-now" onClick={() => {props.updateCart(false); navigate("/categories/all")}}>
                                         SHOP NOW
                                     </button>
                                 </div>
