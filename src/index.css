@@ -1249,14 +1249,15 @@ input {
     background-color: white;
     opacity: 1;
     width: 500px;
-    height: 1000px;
+    height: 100%;
 }
 
 .cart-content-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .your {
@@ -1281,5 +1282,51 @@ input {
     align-items: center;
     height: 100%;
     padding-right: 20px;
+    cursor: pointer;
 
+}
+
+.content-cards-container {
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    height: calc(100vh - 130px - 85px);
+    min-height: 200px;
+    overflow: auto;
+    color: wheat;
+}
+
+.total {
+    height: 130px;
+    width: 100%;
+    background-color: blue;
+    opacity: .6;
+}
+
+.cart-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-img-container-2 {
+    width: 250px;
+    height: 250px;
+}
+
+.cart-img-container-3 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.pad {
+    padding-right: 25px;
+}
+
+.pad-top {
+    padding-top: 15px;
 }
