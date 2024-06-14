@@ -83,7 +83,7 @@ code {
     width: 100%;
 }
 
-.left {
+.left-skin {
     position: relative;
     height: 500px;
     display:flex;
@@ -93,6 +93,7 @@ code {
     justify-content: center;
     align-items: center;
     width: 850px;
+    border: none;
 }
 
 .right-one {
@@ -1229,4 +1230,34 @@ input {
     height: 20px;
     background-color: white;
     border-radius: 50%;
+}
+
+.cart-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: .5;
+}
+
+.cart-content-container-left {
+    width: 65%;
+    background-color: black;
+}
+
+.cart-content-container-right {
+    width: 35%;
+    background-color: var(--grey-wallpaper);
+}
+
+.left-content-cart {
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+}
+
+.right-content-cart {
+    width: 100%;
+    height: 100px;
+    background-color: red;
 }
