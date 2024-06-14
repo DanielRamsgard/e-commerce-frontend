@@ -61,11 +61,11 @@ const Cart = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="shop-now shop-now-2" onClick={() => {setCheckout(false) /* send info to server */}}>
+                                            <button className="shop-now shop-now-2" onClick={() => {setCheckout(false)}}>
                                                 <svg className="pad-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
                                                 </svg>
-                                                Checkout Now
+                                                Back to Cart
                                             </button>
                                             <div className="input-container">
                                                 <div className="quant-price quant-price-ship">
@@ -74,6 +74,9 @@ const Cart = (props) => {
                                                 <input className="subscribe-news-new" placeholder="your@email.com" id="input-email"></input>
                                                 <input className="subscribe-news-new" placeholder="Number Street Address, Unit #, City, ZIP Code, Country" id="input-email"></input>
                                                 <input className="subscribe-news-new" placeholder="Credit Card Number" id="input-email"></input>
+                                                <button className="shop-now shop-now-2 shop-now-3" onClick={() => {setCheckout(false) /* send info to server */}}>
+                                                Checkout Now
+                                            </button>
                                             </div>
                                         </div>
                                     </div>

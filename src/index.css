@@ -497,7 +497,7 @@ img-container-card-small {
     left: 2%;
 }
 
-.your, .logo, .mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.cart-card-text-two, .cart-card-text, .your, .logo, .mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }
@@ -1401,6 +1401,7 @@ input {
 }
 
 .cart-card-container {
+    position: relative;
     border: 1px solid black;
     border-radius: 3px;
     background-color: var(--grey-wallpaper);
@@ -1418,11 +1419,6 @@ input {
     height: inherit;
 }
 
-.right-cart-card {
-    width: 72%;
-    height: inherit;
-}
-
 .pad-right {
     padding-right: 5px;
 }
@@ -1431,4 +1427,52 @@ input {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+.right-cart-card {
+    width: 72%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-cart-card-2 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.cart-card-text {
+    color: black;
+    font-size: 20px;
+}
+
+.cart-card-text-two {
+    width: 85%;
+    color: black;
+    font-size: 20px;
+}
+
+.cart-text {
+    position: absolute;
+    top: 5%;
+    transform: translate(-100%,0%);
+}
+
+.shop-now-3 {
+    position: absolute;
+    bottom: 1%;
+    left: 3.5%;
+    height: 30px;
+    width: 93%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.shop-now-3:hover {
+    text-align: center;
 }
