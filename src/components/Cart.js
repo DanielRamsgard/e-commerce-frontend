@@ -29,6 +29,7 @@ const Cart = (props) => {
                                     Your Cart is Empty
                                 </div>
                                 <div className="pad-top">
+                                    
                                     <button className="shop-now" onClick={() => {props.setCart(false)}}>
                                         SHOP NOW
                                     </button>
@@ -38,7 +39,12 @@ const Cart = (props) => {
                         : 
                         <>
                             <div className="content-cards-container">
-                            
+                                <CartCard />
+                                <CartCard />
+                                <CartCard />
+                                <CartCard />
+                                <CartCard />
+                                <CartCard />
                             </div>
                             {checkout ? 
                                 <>
@@ -55,7 +61,10 @@ const Cart = (props) => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button className="shop-now shop-now-2" onClick={() => {/* send info to server */}}>
+                                            <button className="shop-now shop-now-2" onClick={() => {setCheckout(false) /* send info to server */}}>
+                                                <svg className="pad-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                                                </svg>
                                                 Checkout Now
                                             </button>
                                             <div className="input-container">
@@ -84,6 +93,9 @@ const Cart = (props) => {
                                             </div>
                                         </div>
                                         <button className="shop-now shop-now-2" onClick={() => {setCheckout(true)}}>
+                                            <svg className="pad-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                            </svg>
                                             Go To Checkout
                                         </button>
                                     </div>

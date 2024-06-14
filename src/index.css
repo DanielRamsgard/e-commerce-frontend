@@ -27,6 +27,7 @@ code {
     --card-border: rgb(210,210,210);
     --card-borde-hover: rgb(0,0,0);
     --grey-wallpaper: rgba(233, 233, 233, 255);
+    --grey-wallpaper-two: rgba(213, 213, 213, 255);
     --newsletter: rgba(25, 25, 25, 255);
     --hover: rgb(230,230,230);
     --button-box: rgba(55, 55, 55, 255);
@@ -1286,16 +1287,6 @@ input {
 
 }
 
-.content-cards-container {
-    width: 100%;
-    background-color: black;
-    opacity: .5;
-    height: calc(100vh - 130px - 85px);
-    min-height: 200px;
-    overflow: auto;
-    color: wheat;
-}
-
 .cart-img-container {
     width: 100%;
     height: 100%;
@@ -1392,4 +1383,46 @@ input {
 .quant-price-ship {
     font-style: italic;
     font-size: 20px;
+}
+
+.content-cards-container {
+    width: 85%;
+    height: calc(100vh - 130px - 85px);
+    min-height: 200px;
+    row-gap: 20px;
+    overflow: auto;
+    color: wheat;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.cart-card-container {
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: var(--grey-wallpaper);
+    width: 99%;
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-cart-card {
+    background-color: white;
+    width: 28%;
+    height: inherit;
+}
+
+.right-cart-card {
+    width: 72%;
+    height: inherit;
+}
+
+.pad-right {
+    padding-right: 5px;
 }
