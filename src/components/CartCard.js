@@ -22,7 +22,17 @@ const CartCard = () => {
                     </div>
                     <div className="right-cart-card-2">
                         <div className="">
-
+                            <div className="quant-change-container">
+                                    <div className="left-right-control left new-size" onClick={() => {}}>
+                                        -
+                                    </div>
+                                    <div className="middle-number left-right-control new-size">
+                                        1
+                                    </div>
+                                    <div className="left-right-control right new-size" onClick={() => {}}>
+                                        +
+                                    </div>
+                                </div>
                         </div>
                         <div className="">
                             <svg className="x" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
