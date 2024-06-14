@@ -1334,7 +1334,7 @@ input {
 }
 
 .bar-cart {
-    height: 1.5%;
+    height: 2px;
     width: 93%;
     background-color: black;
 }
@@ -1345,7 +1345,7 @@ input {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
 
 }
@@ -1355,4 +1355,41 @@ input {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.shop-now-2 {
+    width: auto;
+}
+
+.total-container-new {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    height: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.subscribe-news-new {
+    padding-left: 7px;
+    margin-top: 5px;
+    width: 452px;
+    height: 28px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 2px solid black;
+}
+
+.quant-price-ship {
+    font-style: italic;
+    font-size: 20px;
 }
