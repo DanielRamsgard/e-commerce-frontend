@@ -1370,16 +1370,6 @@ input {
     justify-content: center;
 }
 
-.subscribe-news-new {
-    padding-left: 7px;
-    margin-top: 6px;
-    width: 452px;
-    height: 28px;
-    font-size: 15px;
-    font-weight: 300;
-    border: 2px solid black;
-}
-
 .quant-price-ship {
     font-style: italic;
     font-size: 20px;
@@ -1388,7 +1378,7 @@ input {
 .content-cards-container {
     width: 85%;
     height: calc(100vh - 130px - 85px);
-    min-height: 200px;
+    min-height: 123px;
     row-gap: 20px;
     overflow: auto;
     color: wheat;
@@ -1463,16 +1453,29 @@ input {
     transform: translate(-100%,0%);
 }
 
+.x {
+    color: black;
+}
+
+.subscribe-news-new {
+    padding-left: 7px;
+    margin-top: 6px;
+    width: 452px;
+    height: 28px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 2px solid black;
+}
+
 .shop-now-3 {
-    position: absolute;
-    bottom: 1%;
-    left: 3.5%;
-    height: 30px;
-    width: 93%;
     text-align: center;
     font-size: 15px;
+    font-weight: 1000;
+    width: 465px;
 }
 
 .shop-now-3:hover {
     text-align: center;
+    border: 2px solid black;
+    font-weight: 1000;
 }
