@@ -13,6 +13,7 @@ import Product from './components/Product';
 
 
 function App() {
+    const [total, setTotal] = useState(0);
     const [cartCount, setCartCount] = useState(0);
     const [prevPage, setPrevPage] = useState("/");
     const [imgOne, setImgOne] = useState("/static/media/spanish.jpeg");
@@ -44,7 +45,7 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
+                <Route path="/" element={<Home total={total} cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/navigation" element={<Navigation prevPage={prevPage}/>}></Route>
                 <Route path="/categories/all" element={<CategoriesAll cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/furniture" element={<Furniture cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>

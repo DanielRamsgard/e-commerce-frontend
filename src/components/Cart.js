@@ -38,8 +38,23 @@ const Cart = (props) => {
                         <div className="content-cards-container">
                         
                         </div>
-                        <div className="total">
-    
+                        <div className="total-container">
+                            <div className="bar-cart"></div>
+                            <div className="bottom-content-container">
+                                <div className="bottom-content-container-2">
+                                    <div className="quant-price">
+                                        Subtotal
+                                    </div>
+                                    <div>
+                                        <div className="quant-price">
+                                            ${props.total.toString() + ".00"}
+                                        </div>
+                                    </div>
+                                </div>
+                                <button className="shop-now">
+                                    Checkout
+                                </button>
+                            </div>
                         </div>
                      </>}
                 </div>
