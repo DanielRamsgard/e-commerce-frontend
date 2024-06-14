@@ -23,7 +23,7 @@ const BigCallToAction = (props) => {
                             </div>
                         </div>
                         <div className="wallpaper-container-img">
-                            <img className="wallpaper-img" src={props.img}></img>
+                            <img alt="Wallpaper" className="wallpaper-img" src={props.img}></img>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const BigCallToAction = (props) => {
                 <div className="container-container">
                     <div className="container-wallpaper">
                         <div className="wallpaper-container-img">
-                            <img className="wallpaper-img" src={props.img}></img>
+                            <img alt="Wallpaper" className="wallpaper-img" src={props.img}></img>
                         </div>
                         <div className="wallpaper">
                             <div className="info-container">

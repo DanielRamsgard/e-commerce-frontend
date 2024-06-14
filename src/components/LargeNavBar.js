@@ -30,7 +30,7 @@ const LargeNavBar = (props) => {
                     <button className="anek-malayalam-font-light button" onClick={() => {navigate("/product");}}>
                         Product Page
                     </button>
-                    <div className="cart">
+                    <div className="cart" onClick={() => {navigate("/cart");}}>
                         <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}

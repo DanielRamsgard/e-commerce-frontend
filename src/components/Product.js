@@ -11,6 +11,7 @@ const Product = (props) => {
     useEffect(() => {
         props.updatePrevPage("/product");
         window.scrollTo(0, 0);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
     const scrollPosition = UseScrollPosition();

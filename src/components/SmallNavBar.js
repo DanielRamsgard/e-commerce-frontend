@@ -28,7 +28,7 @@ const SmallNavBar = (props) => {
             </div>
             <div className="button-container">
                 <div className="shopping">
-                    <div className="cart">
+                    <div className="cart" onClick={() => {navigate("/cart");}}>
                         <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}
