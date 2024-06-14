@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import CartCard from './CartCard';
+import UseWindowWidth from './WindowWidth';
 
 const Cart = (props) => {
+    const widthCart = UseWindowWidth(500);
     const [checkout, setCheckout] = useState(false);
 
     return (
         <>
             <div className="cart-container" onClick={() => {props.setCart(false); setCheckout(false); props.updateCartTwo(false)}}></div>
-                <div className="cart-container-2">
+                <div className={widthCart ? "cart-container-3" : "cart-container-2"}>
                     <div className="cart-content-container">
                         <div className="text-container-cart">
                             <div className="your">
@@ -72,8 +74,8 @@ const Cart = (props) => {
                                                     Shipping Info.
                                                 </div>
                                                 <input className="subscribe-news-new" placeholder="your@email.com" id="input-email"></input>
-                                                <input className="subscribe-news-new" placeholder="Number Street Address, Unit #, City, ZIP Code, Country" id="input-email"></input>
-                                                <input className="subscribe-news-new" placeholder="Credit Card Number" id="input-email"></input>
+                                                <input className="subscribe-news-new" placeholder="Number Street Address, Unit #, City, ZIP Code, Country" id="input-address"></input>
+                                                <input className="subscribe-news-new" placeholder="Credit Card Number" id="input-credit-card"></input>
                                                 <button className="shop-now shop-now-2 shop-now-3 subscribe-news-new" onClick={() => {/* send info to server */}}>
                                                 Checkout Now
                                             </button>
