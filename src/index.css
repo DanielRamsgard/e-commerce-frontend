@@ -1232,32 +1232,33 @@ input {
     border-radius: 50%;
 }
 
+.cart-container {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: black;
+    opacity: .5;
+    width: 100%;
+    height: 1000px;
+}
+
+.cart-container-2 {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    opacity: 1;
+    width: 500px;
+    height: 1000px;
+}
+
 .cart-content-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    opacity: .5;
 }
 
-.cart-content-container-left {
-    width: 65%;
-    background-color: black;
-}
-
-.cart-content-container-right {
-    width: 35%;
-    background-color: var(--grey-wallpaper);
-}
-
-.left-content-cart {
-    width: 100%;
-    height: 100px;
-    background-color: blue;
-}
-
-.right-content-cart {
-    width: 100%;
-    height: 100px;
-    background-color: red;
+.your {
+    
 }

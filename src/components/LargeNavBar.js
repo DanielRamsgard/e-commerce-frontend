@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Cart from './Cart';
 
 const LargeNavBar = (props) => {
     const navigate = useNavigate();
@@ -42,6 +43,7 @@ const LargeNavBar = (props) => {
                     </div>
                 </div>
             </div>
+            <Cart />
         </>
     );
 }

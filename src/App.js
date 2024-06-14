@@ -10,7 +10,6 @@ import Kitchen from './components/Kitchen';
 import Chairs from './components/Chairs';
 import Skincare from './components/Skincare';
 import Product from './components/Product';
-import Cart from './components/Cart';
 
 
 function App() {
@@ -55,7 +54,6 @@ function App() {
                 <Route path="/categories/chairs" element={<Chairs cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/skincare" element={<Skincare cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/product" element={<Product cartCount={cartCount} setCartCount={setCartCount} updateProduct={updateProduct} size={size} weight={weight} texture={texture} title={title} price={price} description={description} imgThree={imgThree} imgTwo={imgTwo} imgOne={imgOne} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/cart" element={<Cart prevPage={prevPage} updatePrevPage={updatePrevPage} cartCount={cartCount}/>}></Route>
             </Routes>
         </Router>
     );
