@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Cart from './Cart';
 
 const LargeNavBar = (props) => {
     const navigate = useNavigate();
-    const [cart, setCart] = useState(false);
 
     const scrollToTop = () => {
         if (props.prevPage === "/"){
@@ -32,7 +31,7 @@ const LargeNavBar = (props) => {
                     <button className="anek-malayalam-font-light button" onClick={() => {navigate("/product");}}>
                         Product Page
                     </button>
-                    <div className="cart" onClick={() => {setCart(true)}}>
+                    <div className="cart" onClick={() => {props.updateCart(true)}}>
                         <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}
@@ -44,7 +43,7 @@ const LargeNavBar = (props) => {
                     </div>
                 </div>
             </div>
-            {cart || props.cartTwo? <Cart updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} setCart={setCart} cartCount={props.cartCount}/> : <></>}
+            {props.cart || props.cartTwo? <Cart updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} updateCart={props.updateCart} cartCount={props.cartCount}/> : <></>}
         </>
     );
 }

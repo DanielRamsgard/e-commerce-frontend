@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Cart from './Cart';
 
 const SmallNavBar = (props) => {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ const SmallNavBar = (props) => {
             </div>
             <div className="button-container">
                 <div className="shopping">
-                    <div className="cart" onClick={() => {navigate("/cart");}}>
+                    <div className="cart" onClick={() => {props.updateCart(true);}}>
                         <div className={props.cartCount === 0 ? "null" : "ticker"}>
                             <div>
                                 {props.cartCount}
@@ -45,6 +46,7 @@ const SmallNavBar = (props) => {
                     </div>
                 </div>
             </div>
+            {props.cart || props.cartTwo? <Cart updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} updateCart={props.updateCart} cartCount={props.cartCount}/> : <></>}
         </>
     );
 }
