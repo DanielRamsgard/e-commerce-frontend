@@ -44,7 +44,7 @@ const LargeNavBar = (props) => {
                     </div>
                 </div>
             </div>
-            {cart ? <Cart total={props.total} setCart={setCart} cartCount={props.cartCount}/> : <></>}
+            {cart || props.cartTwo? <Cart updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} setCart={setCart} cartCount={props.cartCount}/> : <></>}
         </>
     );
 }

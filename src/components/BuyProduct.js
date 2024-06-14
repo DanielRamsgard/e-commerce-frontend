@@ -91,7 +91,7 @@ const BuyProduct = (props) => {
                                 <div className="add-to-cart" onClick={() => {(props.cartCount < 100 && (props.cartCount + currentCount < 100))? props.setCartCount(props.cartCount + currentCount) : props.setCartCount(props.cartCount)}}>
                                     ADD TO CART
                                 </div>
-                                <div className="buy-now" onClick={() => {(props.cartCount < 100 && (props.cartCount + currentCount < 100))? props.setCartCount(props.cartCount + currentCount) : props.setCartCount(props.cartCount)}}>
+                                <div className="buy-now" onClick={() => {if (props.cartCount < 100 && (props.cartCount + currentCount < 100)) {props.setCartCount(props.cartCount + currentCount); props.updateCartTwo(true)} else {props.setCartCount(props.cartCount)}}}>
                                     BUY NOW
                                 </div>
                             </div>
