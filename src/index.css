@@ -496,7 +496,7 @@ img-container-card-small {
     left: 2%;
 }
 
-.logo, .mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
+.your, .logo, .mini-mini-title, .product-description, .card-price-small, .call-action, .subscribe-news, .subscribe, .card-price, .card-text, .sunflower-light {
     font-family: "Sunflower", sans-serif;
     font-style: normal;
   }
@@ -1260,5 +1260,26 @@ input {
 }
 
 .your {
-    
+    padding-top: 20px;
+    font-size: 28px;
+    font-weight: 1000;
+    padding-left: 20px;
+}
+
+.text-container-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.cart-2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+
 }

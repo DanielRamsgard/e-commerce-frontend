@@ -43,7 +43,7 @@ const LargeNavBar = (props) => {
                     </div>
                 </div>
             </div>
-            <Cart />
+            <Cart cartCount={props.cartCount}/>
         </>
     );
 }
