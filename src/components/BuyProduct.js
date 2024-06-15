@@ -8,6 +8,7 @@ const BuyProduct = (props) => {
     useEffect(() => {
         setImg(props.imgOne);
         setNum(1);
+        setCurrentCount(1);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'  // Add smooth scrolling behavior
