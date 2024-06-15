@@ -32,7 +32,7 @@ const Skincare = (props) => {
     return (
         <div>
             <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                <NavBar cartContent={props.cartContent} cartTwo={props.cartTwo} updateCartTwo={props.updateCartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
+                <NavBar updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} cartContent={props.cartContent} cartTwo={props.cartTwo} updateCartTwo={props.updateCartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
