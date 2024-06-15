@@ -7,6 +7,7 @@ const BuyProduct = (props) => {
 
     useEffect(() => {
         setImg(props.imgOne);
+        setNum(1);
         window.scrollTo({
             top: 0,
             behavior: 'smooth'  // Add smooth scrolling behavior
@@ -18,7 +19,6 @@ const BuyProduct = (props) => {
         if (num > 1) {
             setNum(num - 1);
             setCurrentCount(currentCount - 1);
-            props.updateTotal( - ( num * props.price) );
         }
     }
 
@@ -27,7 +27,6 @@ const BuyProduct = (props) => {
             setNum(num + 1);
             
             setCurrentCount(currentCount + 1);
-            props.updateTotal( + ( num * props.price) );
         }
     }
 
@@ -90,7 +89,7 @@ const BuyProduct = (props) => {
                                 </div>
                             </div>
                             <div className={props.widthSmall ? "add-to-cart-container-new" : "add-to-cart-container"}>
-                                <div className="add-to-cart" onClick={() => {(props.cartCount < 100 && (props.cartCount + currentCount < 100))? props.setCartCount(props.cartCount + currentCount) : props.setCartCount(props.cartCount)}}>
+                                <div className="add-to-cart" onClick={() => { if (props.cartCount < 100 && (props.cartCount + currentCount < 100)){ props.setCartCount(props.cartCount + currentCount); props.updateTotal( currentCount * props.price )} else { props.setCartCount(props.cartCount)}}}>
                                     ADD TO CART
                                 </div>
                                 <div className="buy-now" onClick={() => {if (props.cartCount < 100 && (props.cartCount + currentCount < 100)) {props.setCartCount(props.cartCount + currentCount); props.updateCartTwo(true)} else {props.setCartCount(props.cartCount)}}}>
