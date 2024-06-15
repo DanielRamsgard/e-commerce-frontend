@@ -29,9 +29,11 @@ function App() {
     const [cartContent, setCartContent] = useState([]);
 
     function updateCartContent(img, title, price, quantity) {
-        setCartContent(cartContent.push({img, title, price, quantity}));
-        console.log(cartContent);
-    }
+        setCartContent(prevCartContent => [
+            ...prevCartContent,
+            { img, title, price, quantity }
+        ]);
+}
 
     function updateTotal(sum) {
         setTotal(total + sum);

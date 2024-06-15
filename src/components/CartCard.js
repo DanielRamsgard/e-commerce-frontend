@@ -16,7 +16,7 @@ const CartCard = (props) => {
                         </div>
                         <div className="cart-card-text cart-text-two">
                             <div className="cart-text">
-                            {"$" + props.price + ".00"}
+                            {"$" + props.price}
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const CartCard = (props) => {
                                         -
                                     </div>
                                     <div className="middle-number left-right-control new-size">
-                                        1
+                                        {props.quantity}
                                     </div>
                                     <div className="left-right-control right new-size" onClick={() => {}}>
                                         +
