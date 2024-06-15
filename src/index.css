@@ -1038,6 +1038,7 @@ input {
 .add-to-cart {
     height: 72%;
     width: 47.5%;
+    cursor: pointer;
     border: 2px solid black;
     display: flex;
     align-items: center;
@@ -1055,6 +1056,7 @@ input {
 .buy-now {
     height: 72%;
     width: 47.5%;
+    cursor: pointer;
     background-color: var(--red-buy);
     color: white;
     display: flex;
