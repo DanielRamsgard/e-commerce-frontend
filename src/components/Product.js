@@ -40,7 +40,7 @@ const Product = (props) => {
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <BuyProduct updateCartTwo={props.updateCartTwo} cartCount={props.cartCount} setCartCount={props.setCartCount} size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
+            <BuyProduct updateTotal={props.updateTotal} total={props.total} updateCartTwo={props.updateCartTwo} cartCount={props.cartCount} setCartCount={props.setCartCount} size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
             <div className="spacer"></div>
             <div className="trend-container">
                 <div className="trend">

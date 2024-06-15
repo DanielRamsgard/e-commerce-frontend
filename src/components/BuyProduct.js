@@ -18,6 +18,7 @@ const BuyProduct = (props) => {
         if (num > 1) {
             setNum(num - 1);
             setCurrentCount(currentCount - 1);
+            props.updateTotal( - ( num * props.price) );
         }
     }
 
@@ -26,6 +27,7 @@ const BuyProduct = (props) => {
             setNum(num + 1);
             
             setCurrentCount(currentCount + 1);
+            props.updateTotal( + ( num * props.price) );
         }
     }
 
