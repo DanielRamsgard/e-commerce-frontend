@@ -5,6 +5,14 @@ import Cart from './Cart';
 const LargeNavBar = (props) => {
     const navigate = useNavigate();
 
+    const countQuant = () => {
+        let quant = 0
+        props.cartContent.map((item) => {
+            quant += item.quantity;
+        })
+        return quant
+    }
+
     const scrollToTop = () => {
         if (props.prevPage === "/"){
             window.scrollTo({
@@ -32,9 +40,9 @@ const LargeNavBar = (props) => {
                         Product Page
                     </button>
                     <div className="cart" onClick={() => {props.updateCart(true)}}>
-                        <div className={props.cartCount === 0 ? "null" : "ticker"}>
+                        <div className={countQuant() === 0 ? "null" : "ticker"}>
                             <div>
-                                {props.cartCount}
+                                {countQuant()}
                             </div>
                         </div>
                         <svg className="cart" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
