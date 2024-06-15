@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CartCard = (props) => {
+    const [currentQuantity, setCurrentQuantity] = useState(props.quantity);
+
     return (
         <>
             <div className="cart-card-container">
@@ -23,13 +25,22 @@ const CartCard = (props) => {
                     <div className="right-cart-card-2">
                         <div className="">
                             <div className="quant-change-container">
-                                    <div className="left-right-control left new-size" onClick={() => {}}>
+                                    <div className="left-right-control left new-size" onClick={() => { 
+                                        if (currentQuantity > 1){
+                                            setCurrentQuantity(currentQuantity - 1);
+                                        }
+                                     }}>
                                         -
                                     </div>
                                     <div className="middle-number left-right-control new-size">
-                                        {props.quantity}
+                                        {currentQuantity}
                                     </div>
-                                    <div className="left-right-control right new-size" onClick={() => {}}>
+                                    <div className="left-right-control right new-size" onClick={() => {
+                                        if (currentQuantity < 99){
+                                            console.log()
+                                            setCurrentQuantity(currentQuantity + 1);
+                                        }
+                                    }}>
                                         +
                                     </div>
                                 </div>
