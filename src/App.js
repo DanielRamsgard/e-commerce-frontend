@@ -29,11 +29,31 @@ function App() {
     const [cartContent, setCartContent] = useState([]);
 
     function updateCartContent(img, title, price, quantity) {
-        setCartContent(prevCartContent => [
-            ...prevCartContent,
-            { img, title, price, quantity }
-        ]);
-}
+        setCartContent(prevCartContent => {
+            // Find the item with the same img tag
+            const itemIndex = prevCartContent.findIndex(item => item.img === img);
+    
+            // If item exists, update its quantity
+            if (itemIndex > -1) {
+                const updatedCartContent = prevCartContent.map((item, index) => {
+                    if (index === itemIndex) {
+                        return {
+                            ...item,
+                            quantity: item.quantity + quantity
+                        };
+                    }
+                    return item;
+                });
+                return updatedCartContent;
+            } else {
+                // If item doesn't exist, add new item
+                return [
+                    ...prevCartContent,
+                    { img, title, price, quantity }
+                ];
+            }
+        });
+    }
 
     function updateTotal(sum) {
         setTotal(total + sum);
