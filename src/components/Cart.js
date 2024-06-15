@@ -43,12 +43,10 @@ const Cart = (props) => {
                         : 
                         <>
                             <div className="content-cards-container">
-                                <CartCard />
-                                <CartCard />
-                                <CartCard />
-                                <CartCard />
-                                <CartCard />
-                                <CartCard />
+                                {console.log(props.cartContent + 'here')}
+                                {props.cartContent.map((item) => {
+                                    return <CartCard img={item.img} title={item.title} price={item.price} quantity={item.quantity}/>
+                                })}
                             </div>
                             {checkout ? 
                                 <>

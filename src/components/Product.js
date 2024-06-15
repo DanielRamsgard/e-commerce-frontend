@@ -36,11 +36,11 @@ const Product = (props) => {
     return (
         <div>
             <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                <NavBar cartTwo={props.cartTwo} updateCartTwo={props.updateCartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
+                <NavBar cartContent={props.cartContent} cartTwo={props.cartTwo} updateCartTwo={props.updateCartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>
-            <BuyProduct updateTotal={props.updateTotal} total={props.total} updateCartTwo={props.updateCartTwo} cartCount={props.cartCount} setCartCount={props.setCartCount} size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
+            <BuyProduct updateCartContent={props.updateCartContent} updateTotal={props.updateTotal} total={props.total} updateCartTwo={props.updateCartTwo} cartCount={props.cartCount} setCartCount={props.setCartCount} size={props.size} weight={props.weight} texture={props.texture} title={props.title} price={props.price} description={props.description} imgThree={props.imgThree} imgTwo={props.imgTwo} imgOne={props.imgOne} widthThree={widthThree} widthScreen={widthScreen} widthSmall={widthSmall} widthText={widthText} widthSmallSmall={widthSmallSmall}/>
             <div className="spacer"></div>
             <div className="trend-container">
                 <div className="trend">

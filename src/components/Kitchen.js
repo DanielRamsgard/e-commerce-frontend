@@ -32,7 +32,7 @@ const Kitchen = (props) => {
     return (
         <div>
             <div className={scroll ? "nav-bar-small" : "nav-bar"}>
-                <NavBar updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
+                <NavBar cartContent={props.cartContent} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} cartCount={props.cartCount} prevPage={props.prevPage} widthBool={widthBoolNav}/>
             </div>
             <div className="spacer"></div>
             <div className="spacer-2"></div>

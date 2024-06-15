@@ -90,10 +90,10 @@ const BuyProduct = (props) => {
                                 </div>
                             </div>
                             <div className={props.widthSmall ? "add-to-cart-container-new" : "add-to-cart-container"}>
-                                <div className="add-to-cart" onClick={() => { if (props.cartCount < 100 && (props.cartCount + currentCount < 100)){ props.setCartCount(props.cartCount + currentCount); props.updateTotal( currentCount * props.price )} else { props.setCartCount(props.cartCount)}}}>
+                                <div className="add-to-cart" onClick={() => { if (props.cartCount < 100 && (props.cartCount + currentCount < 100)){ props.setCartCount(props.cartCount + currentCount); props.updateTotal( currentCount * props.price ); props.updateCartContent(props.imgOne, props.title, props.price, currentCount)} else { props.setCartCount(props.cartCount)}}}>
                                     ADD TO CART
                                 </div>
-                                <div className="buy-now" onClick={() => {if (props.cartCount < 100 && (props.cartCount + currentCount < 100)) {props.setCartCount(props.cartCount + currentCount); props.updateCartTwo(true)} else {props.setCartCount(props.cartCount)}}}>
+                                <div className="buy-now" onClick={() => {if (props.cartCount < 100 && (props.cartCount + currentCount < 100)) {props.setCartCount(props.cartCount + currentCount); props.updateCartTwo(true); props.updateCartContent(props.imgOne, props.title, props.price, currentCount)} else {props.setCartCount(props.cartCount)}}}>
                                     BUY NOW
                                 </div>
                             </div>

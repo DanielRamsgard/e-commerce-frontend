@@ -1,22 +1,22 @@
 import React from 'react';
 
-const CartCard = () => {
+const CartCard = (props) => {
     return (
         <>
             <div className="cart-card-container">
                 <div className="left-cart-card">
-                    <img className="img-cart-card" alt="Card" src="/static/media/chanel.jpeg"></img>
+                    <img className="img-cart-card" alt="Card" src={props.img}></img>
                 </div>
                 <div className="right-cart-card">
                     <div className="right-cart-card-2">
                         <div>
                             <div className="cart-card-text-two">
-                            Boy De Chanel Toning Lotion
+                            {props.title}
                             </div>
                         </div>
                         <div className="cart-card-text cart-text-two">
                             <div className="cart-text">
-                            $5868
+                            {"$" + props.price + ".00"}
                             </div>
                         </div>
                     </div>
