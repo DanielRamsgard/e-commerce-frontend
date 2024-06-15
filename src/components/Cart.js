@@ -44,7 +44,7 @@ const Cart = (props) => {
                         <>
                             <div className="content-cards-container">
                                 {props.cartContent.map((item) => {
-                                    return <CartCard img={item.img} title={item.title} price={item.price} quantity={item.quantity}/>
+                                    return <CartCard updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} total={props.total} img={item.img} title={item.title} price={item.price} quantity={item.quantity}/>
                                 })}
                             </div>
                             {checkout ? 

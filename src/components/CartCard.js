@@ -26,19 +26,20 @@ const CartCard = (props) => {
                         <div className="">
                             <div className="quant-change-container">
                                     <div className="left-right-control left new-size" onClick={() => { 
-                                        if (currentQuantity > 1){
-                                            setCurrentQuantity(currentQuantity - 1);
+                                        if (props.quantity > 1){
+                                            props.updateCartContent(props.img, props.title, props.price, props.quantity - 1);
+                                            props.updateTotal( - props.price );
                                         }
                                      }}>
                                         -
                                     </div>
                                     <div className="middle-number left-right-control new-size">
-                                        {currentQuantity}
+                                        {props.quantity}
                                     </div>
                                     <div className="left-right-control right new-size" onClick={() => {
-                                        if (currentQuantity < 99){
-                                            console.log()
-                                            setCurrentQuantity(currentQuantity + 1);
+                                        if (props.quantity < 99){
+                                            setCurrentQuantity(props.img, props.title, props.price, props.quantity + 1);
+                                            props.updateTotal( props.price );
                                         }
                                     }}>
                                         +

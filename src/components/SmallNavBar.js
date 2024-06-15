@@ -46,7 +46,7 @@ const SmallNavBar = (props) => {
                     </div>
                 </div>
             </div>
-            {props.cart || props.cartTwo? <Cart updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} updateCart={props.updateCart} cartCount={props.cartCount}/> : <></>}
+            {props.cart || props.cartTwo? <Cart updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} updateCartTwo={props.updateCartTwo} cartTwo={props.cartTwo} total={props.total} updateCart={props.updateCart} cartCount={props.cartCount}/> : <></>}
         </>
     );
 }
