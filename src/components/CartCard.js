@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const CartCard = (props) => {
-    const [currentQuantity, setCurrentQuantity] = useState(props.quantity);
 
     return (
         <>

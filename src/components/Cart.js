@@ -4,6 +4,14 @@ import UseWindowWidth from './WindowWidth';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = (props) => {
+    const countQuant = () => {
+        let quant = 0
+        props.cartContent.map((item) => {
+            quant += item.quantity;
+        })
+        return quant
+    }
+
     const navigate = useNavigate();
     const widthCart = UseWindowWidth(500);
     const [checkout, setCheckout] = useState(false);
@@ -15,7 +23,7 @@ const Cart = (props) => {
                     <div className="cart-content-container">
                         <div className="text-container-cart">
                             <div className="your">
-                                {`Your Shopping Cart (${props.cartCount})`}
+                            Your Shopping Cart ({countQuant()})
                             </div>
                             <div className="cart-2" onClick={() => {props.updateCart(false); setCheckout(false); props.updateCartTwo(false)}}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
