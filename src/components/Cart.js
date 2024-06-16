@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Cart = (props) => {
     const countQuant = () => {
         let quant = 0
+        // eslint-disable-next-line
         props.cartContent.map((item) => {
             quant += item.quantity;
         })
@@ -52,7 +53,13 @@ const Cart = (props) => {
                         <>
                             <div className="content-cards-container">
                                 {props.cartContent.map((item) => {
-                                    return <CartCard updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} total={props.total} img={item.img} title={item.title} price={item.price} quantity={item.quantity} key={item.img}/>
+                                    if (item.quantity !== 0) {
+                                        
+                                        return <CartCard updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} total={props.total} img={item.img} title={item.title} price={item.price} quantity={item.quantity} key={item.img}/>
+                                    } else {
+                                        return <div key={item.img + "empty"}></div>;
+                                    }
+                                    
                                 })}
                             </div>
                             {checkout ? 
