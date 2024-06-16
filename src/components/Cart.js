@@ -32,7 +32,7 @@ const Cart = (props) => {
                                 </svg>
                             </div>
                         </div>
-                        {props.cartCount === 0 ?
+                        {countQuant() === 0 ?
                         <>
                             <div className="cart-img-container">
                                 <div className="cart-img-container-2">
@@ -57,7 +57,8 @@ const Cart = (props) => {
                                         
                                         return <CartCard updateTotal={props.updateTotal} updateCartContent={props.updateCartContent} total={props.total} img={item.img} title={item.title} price={item.price} quantity={item.quantity} key={item.img}/>
                                     } else {
-                                        return <div key={item.img + "empty"}></div>;
+                                        // eslint-disable-next-line
+                                        return;
                                     }
                                     
                                 })}
