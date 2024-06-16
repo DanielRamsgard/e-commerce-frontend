@@ -4,6 +4,23 @@ import UseWindowWidth from './WindowWidth';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = (props) => {
+    const [boolOne, setBoolOne] = useState(false);
+    const [boolTwo, setBoolTwo] = useState(false);
+    const [boolThree, setBoolThree] = useState(false);
+    const [congrats, setCongrats] = useState(false);
+
+    const handleCheckout = () => {
+        if (boolOne && boolTwo && boolThree) {
+            setCongrats(true);
+            
+            setTimeout(() => {
+                setCongrats(false);
+            }, 5000);
+
+            // server post for email
+        }
+    }
+
     const countQuant = () => {
         let quant = 0
         // eslint-disable-next-line
@@ -88,11 +105,11 @@ const Cart = (props) => {
                                                 <div className="quant-price quant-price-ship">
                                                     Shipping Info.
                                                 </div>
-                                                <input className="subscribe-news-new" placeholder="your@email.com" id="input-email"></input>
-                                                <input className="subscribe-news-new" placeholder="# Address, Unit #, City, ZIP, Country" id="input-address"></input>
-                                                <input className="subscribe-news-new" placeholder="Credit Card #" id="input-credit-card"></input>
-                                                <button className="shop-now shop-now-2 shop-now-3 subscribe-news-new" onClick={() => {/* send info to server */}}>
-                                                Checkout Now
+                                                <input className="subscribe-news-new" placeholder="your@email.com" id="input-email" onChange={(e) => { setBoolOne(e.target.value.trim().length > 0) }}></input>
+                                                <input className="subscribe-news-new" placeholder="# Address, Unit #, City, ZIP, Country" id="input-address" onChange={(e) => { setBoolTwo(e.target.value.trim().length > 0) }}></input>
+                                                <input className="subscribe-news-new" placeholder="Credit Card #" id="input-credit-card" onChange={(e) => { setBoolThree(e.target.value.trim().length > 0) }}></input>
+                                                <button className={congrats ? "shop-now shop-now-2 shop-now-3 subscribe-news-new congrats" : "shop-now shop-now-2 shop-now-3 subscribe-news-new"} onClick={handleCheckout}>
+                                                {congrats ? "Your order is on its way!" : "Checkout Now"}
                                             </button>
                                             </div>
                                         </div>

@@ -1502,3 +1502,15 @@ input {
     height: 30px;
     font-size: 20px;
 }
+
+.congrats {
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
+
+.congrats:hover {
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
