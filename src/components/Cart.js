@@ -8,8 +8,27 @@ const Cart = (props) => {
     const [boolTwo, setBoolTwo] = useState(false);
     const [boolThree, setBoolThree] = useState(false);
     const [congrats, setCongrats] = useState(false);
+    const [email, setEmail] = useState("");
+    const [address, setAddress] = useState("");
 
-    const handleCheckout = () => {
+    const stringItem = () => {
+        let itemList = ""
+        let i = 0
+        const max = props.cartContent.length
+
+        for (let item of props.cartContent) {
+            if (i === max - 1) {
+                itemList += ", and " + item.title;
+                return itemList;
+            }
+            (i > 0 && item.quantity > 0) ? itemList += ", " + item.title : itemList += item.title;
+            i += 1;
+          }
+    }
+
+    const handleCheckout = async () => {
+        const items = stringItem();
+
         if (boolOne && boolTwo && boolThree) {
             setCongrats(true);
             
@@ -17,7 +36,32 @@ const Cart = (props) => {
                 setCongrats(false);
             }, 5000);
 
-            // server post for email
+            try {
+                const url = 'http://127.0.0.1:8000/order/'; 
+                const orderData = {
+                    email: email, 
+                    total: props.total,  
+                    item_list: items,  
+                    address: address  
+                };
+                const requestOptions = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(orderData)
+                };
+                const res = await fetch(url, requestOptions);
+                if (!res.ok) {
+                    throw new Error('Failed to send email');  // Handle error if fetch request fails
+                }
+    
+                // Handle success if needed
+                console.log('Email sent successfully');
+
+            } catch (err) {
+                console.log(err);
+            }
         }
     }
 
@@ -60,7 +104,7 @@ const Cart = (props) => {
                                 </div>
                                 <div className="pad-top">
                                     
-                                    <button className="shop-now" onClick={() => {props.updateCart(false); navigate("/categories/all")}}>
+                                    <button className="shop-now" onClick={() => {props.updateCartTwo(false); props.updateCart(false); navigate("/categories/all")}}>
                                         SHOP NOW
                                     </button>
                                 </div>
@@ -105,8 +149,8 @@ const Cart = (props) => {
                                                 <div className="quant-price quant-price-ship">
                                                     Shipping Info.
                                                 </div>
-                                                <input className="subscribe-news-new" placeholder="your@email.com" id="input-email" onChange={(e) => { setBoolOne(e.target.value.trim().length > 0) }}></input>
-                                                <input className="subscribe-news-new" placeholder="# Address, Unit #, City, ZIP, Country" id="input-address" onChange={(e) => { setBoolTwo(e.target.value.trim().length > 0) }}></input>
+                                                <input className="subscribe-news-new" placeholder="your@email.com" id="input-email" onChange={(e) => { setBoolOne(e.target.value.trim().length > 0); setEmail(e.target.value); }}></input>
+                                                <input className="subscribe-news-new" placeholder="# Address, Unit #, City, ZIP, Country" id="input-address" onChange={(e) => { setBoolTwo(e.target.value.trim().length > 0); setAddress(e.target.value); }}></input>
                                                 <input className="subscribe-news-new" placeholder="Credit Card #" id="input-credit-card" onChange={(e) => { setBoolThree(e.target.value.trim().length > 0) }}></input>
                                                 <button className={congrats ? "shop-now shop-now-2 shop-now-3 subscribe-news-new congrats" : "shop-now shop-now-2 shop-now-3 subscribe-news-new"} onClick={handleCheckout}>
                                                 {congrats ? "Your order is on its way!" : "Checkout Now"}
