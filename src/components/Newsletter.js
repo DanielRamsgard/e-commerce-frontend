@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Newsletter = () => {
+    const [sub, setSub]  = useState(false);
+
     return (
         <>
             <div className="newsletter-container">
@@ -12,8 +14,12 @@ const Newsletter = () => {
                     <input className="subscribe-news" placeholder="your@email.com" id="input">
                         
                     </input>
-                    <button className="subscribe">
-                        Subscribe
+                    <button className="subscribe" onClick={() => {setSub(true)}}>
+                        { sub ? 
+                        "Subscribed!" 
+                        : 
+                        "Subscribe"
+                        }
                     </button>
                 </div>
             </div>
