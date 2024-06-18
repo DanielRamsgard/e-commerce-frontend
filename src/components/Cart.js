@@ -17,7 +17,7 @@ const Cart = (props) => {
         const max = props.cartContent.length
 
         for (let item of props.cartContent) {
-            if (i === max - 1 && i !== 0) {
+            if (i === max - 1 && max - 1 !== 0) {
                 itemList += ", and " + item.title;
                 return itemList;
             }
