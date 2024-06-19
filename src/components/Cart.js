@@ -17,7 +17,7 @@ const Cart = (props) => {
         const max = props.cartContent.length
 
         for (let item of props.cartContent) {
-            if (i === max - 1 && max - 1 !== 0) {
+            if (i === max - 1) {
                 itemList += ", and " + item.title;
                 return itemList;
             }
@@ -37,7 +37,7 @@ const Cart = (props) => {
             }, 5000);
 
             try {
-                const url = 'http://127.0.0.1:8000/order/'; 
+                const url = 'http://localhost:8000/order/'; 
                 const orderData = {
                     email: email, 
                     total: props.total,  
