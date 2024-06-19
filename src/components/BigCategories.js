@@ -19,7 +19,7 @@ const BigCategories = () => {
             </div>
             <div className="right-one">
                 <div className="box-right" onClick={() => {navigate("/categories/kitchen")}}>
-                    <div className="text anek-malayalam-font"> Kichen </div>
+                    <div className="text anek-malayalam-font"> Kitchen </div>
                     <img alt="Kitchen" className="box-right-img" src="/static/media/kitchen.jpeg"></img>
                 </div>
                 <div className="box-right" onClick={() => {navigate("/categories/electronics")}}>
