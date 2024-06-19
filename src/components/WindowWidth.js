@@ -1,22 +1,22 @@
 import { useState, useEffect } from 'react';
 
 const UseWindowWidth = (threshold) => {
-  const [widthBool, setWidthBool] = useState(window.innerWidth < threshold);
-
-  useEffect(() => {
+    const [widthBool, setWidthBool] = useState(window.innerWidth < threshold);
+    
+    useEffect(() => {
     const handleResize = () => {
-      setWidthBool(window.innerWidth < threshold);
+        setWidthBool(window.innerWidth < threshold);
     };
 
     window.addEventListener('resize', handleResize);
-    
+
     // Cleanup event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+        window.removeEventListener('resize', handleResize);
     };
-  }, [threshold]);
+    }, [threshold]);
 
-  return widthBool;
+    return widthBool;
 };
 
 export default UseWindowWidth;
