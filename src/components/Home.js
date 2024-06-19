@@ -1,7 +1,7 @@
 import NavBar from './NavBar';
 import BigCategories from './BigCategories';
 import React, { useEffect, useState } from 'react';
-import UseScrollPosition from './Scroll';
+import useScrollPosition from './Scroll';
 import UseWindowWidth from './WindowWidth';
 import SmallCategories from './SmallCategories';
 import Card from './Card';
@@ -14,7 +14,7 @@ import CustomCarousel from './CarouselCustom';
 const Home = (props) => {
 
     const [scroll, setScroll] = useState(false);
-    const scrollPosition = UseScrollPosition();
+    const scrollPosition = useScrollPosition();
     const widthBoolNav = UseWindowWidth(700);
     const widthBoolCategories = UseWindowWidth(1200);
     const widthBoolCallToAction = UseWindowWidth(750);

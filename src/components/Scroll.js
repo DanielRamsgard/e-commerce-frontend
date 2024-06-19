@@ -1,30 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from "react";
 
-const UseScrollPosition = () => {
+const useScrollPosition = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   
     useEffect(() => {
-      const handleScroll = () => {
-        const currentPosition = window.scrollY;
-        if (currentPosition > prevScrollPosition) {
-          setScrollPosition((prev) => prev + (currentPosition - prevScrollPosition));
-
-        } else {
-          setScrollPosition((prev) => prev - (prevScrollPosition - currentPosition));
-
-        }
-        setPrevScrollPosition(currentPosition);
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [prevScrollPosition]);
+      const updatePosition = () => {
+        setScrollPosition(window.scrollY);
+      }
+      window.addEventListener("scroll", updatePosition);
+      updatePosition();
+      return () => window.removeEventListener("scroll", updatePosition);
+    }, []);
   
     return scrollPosition;
-};
-
-export default UseScrollPosition;
+  };
+  
+  export default useScrollPosition;

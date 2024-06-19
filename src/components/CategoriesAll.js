@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './NavBar';
 import UseWindowWidth from './WindowWidth';
-import UseScrollPosition from './Scroll';
+import useScrollPosition from './Scroll';
 import Newsletter from './Newsletter';
 import BottomHeader from './BottomHeader';
 import Card from './Card';
@@ -15,7 +15,7 @@ const CategoriesAll = (props) => {
         window.scrollTo(0, 0);
       }, [props]);
 
-    const scrollPosition = UseScrollPosition();
+    const scrollPosition = useScrollPosition();
     const [scroll, setScroll] = useState(false);
     const widthBoolNav = UseWindowWidth(700);
     const widthPhone = UseWindowWidth(300);
