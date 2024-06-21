@@ -83,7 +83,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home updateCartContent={updateCartContent} cartContent={cartContent} updateCartTwo={updateCartTwo} updateTotal={updateTotal} cartTwo={cartTwo} total={total} cartCount={cartCount} updateProduct={updateProduct} prevPage={prevPage} updatePrevPage={updatePrevPage}/>}></Route>
-                <Route path="/navigation" element={<Navigation updateCartContent={updateCartContent} cartContent={cartContent} prevPage={prevPage}/>}></Route>
+                <Route path="/navigation" element={<Navigation updateCartTwo={updateCartTwo} updateCartContent={updateCartContent} cartContent={cartContent} prevPage={prevPage}/>}></Route>
                 <Route path="/categories/all" element={<CategoriesAll updateCartContent={updateCartContent} cartContent={cartContent} updateCartTwo={updateCartTwo} updateTotal={updateTotal} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/furniture" element={<Furniture updateCartContent={updateCartContent} cartContent={cartContent} updateCartTwo={updateCartTwo} updateTotal={updateTotal} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
                 <Route path="/categories/electronics" element={<Electronics updateCartContent={updateCartContent} cartContent={cartContent} updateCartTwo={updateCartTwo} updateTotal={updateTotal} cartTwo={cartTwo} total={total} cartCount={cartCount} prevPage={prevPage} updateProduct={updateProduct} updatePrevPage={updatePrevPage}/>}></Route>
