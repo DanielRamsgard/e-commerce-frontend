@@ -37,7 +37,7 @@ const Cart = (props) => {
             }, 5000);
 
             try {
-                const url = 'http://localhost:8000/order/'; 
+                const url = 'http://3.238.248.235:8000/order/'; 
                 const orderData = {
                     email: email, 
                     total: props.total,  
