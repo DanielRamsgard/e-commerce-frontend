@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Microservices E-Commerce Site
+Microservices E-Commerce Site is a robust application that provides twenty products that users are able to buy. The application was built using FastAPI, React, MySQL, Docker, Nginx, Uvircorn, AWS S3, AWS CloudFront, AWS ECS, and Railway. You may visit the site here: https://dac235ohvwvlv.cloudfront.net/. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Landing Page
+![Landing Page](./media/landing.png)
+This page functions as the landing page where a user can proceed to shop throughout the page. This page was built with React, HTML, and CSS.
 
-## Available Scripts
+## Products we are proud of
+![Proud](./media/proud.png)
+This part of the website allows users to shop for some of our best products.  This page was built using React, HTML, and CSS.
 
-In the project directory, you can run:
+## Branding Area
+![Brand](./media/brand.png)
+This part of the initial page allows for users to see a small part of what our brand represents and can provide.
 
-### `npm start`
+## Trending Products
+![Categories](./media/trending.png)
+This part of the page allows users to see our trending products.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Newsletter
+![Newsletter](./media/bottom.png)
+Here users can visit other pages about our brand information and subscribe to our newsletter. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Categorties Page
+![Categories](./media/all.png)
+This page allows users to search for items by category. 
 
-### `npm test`
+## Product Page
+![Product](./media/cart.png)
+![Info](./media/info.png)
+This page allows users to add a specified number of a given product to the user's cart. Users can see different photos of a product, as well as its description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Cart
+![Empty](./media/empty.png)
+![Full](./media/full.png)
+The cart lets user's dynamically change the amount of items in their cart. The number of items and price all change dynamically. 
 
-### `npm run build`
+## Checkout
+![Checkout](./media/checkout.png)
+Here users may put in their checkout ifnormation and get sent an email of their order information. Upon submit, their orders are stored in a MySQL database. Users will be sent a confirmation email regarding their success of their payment, including info. about products bought, total, and other info.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Try it out
+If you'd like to run the site, you must install React. After installation, you may run it locally by performing the following steps:
+```sh
+# Clone the repository.
+git clone https://github.com/DanielRamsgard/e-commerce-frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate to the project directory.
+cd e-commerce-frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Run this command to view the site locally
+npm run start
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# The application runs on 'http://localhost'
+```
